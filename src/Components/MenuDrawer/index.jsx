@@ -37,6 +37,7 @@ const ImageCarousel = ({ open, openDrawer, items }) => {
           <Image
             style={{borderRadius: "3vmin" }}
             width={"20%"}
+            
             preview={false}
             src={LogoBlack}
           />
