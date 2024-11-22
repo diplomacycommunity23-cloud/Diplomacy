@@ -1,13 +1,31 @@
 .Header {
     z-index: 1000;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.0);
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 0 20px;
-    height: 64px;
+    height: 15%;
     top: 0;
     left: 0;
-    position: fixed; 
+    padding: 10px 15%;
+    position: absolute;
+}
+
+.Logo {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.NavBar {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    color: white;
+}
+
+.NavBarText {
+    font-size: 18px;
+    color: white;
 }

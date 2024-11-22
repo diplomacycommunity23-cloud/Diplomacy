@@ -1,7 +1,7 @@
-import { Layout, Dropdown, Menu } from 'antd';
+import { Layout, Dropdown, Menu, Typography, Image } from 'antd';
 import style from './style.module.scss';
 const { Header } = Layout;
-import { DownOutlined } from '@ant-design/icons';
+const { Text } = Typography;
 
 const Index = () => {
     const aboutUsMenu = (
@@ -17,17 +17,39 @@ const Index = () => {
 
     return (
         <Header className={style.Header}>
-            <div className="logo" style={{ color: 'white', fontWeight: 'bold', fontSize: '20px' }}>LOGO</div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '20px', color: 'white' }}>
+            <div className={style.Logo}>
+                <Image
+                    width={150}
+                    preview={false}
+                    src="/HeaderLogo.png"
+                />
+            </div>
+            <div className={style.NavBar} >
                 <Dropdown overlay={aboutUsMenu} placement="bottomCenter">
-                    <a className="ant-dropdown-link" onClick={e => e.preventDefault()} href="#">
-                        ABOUT US <DownOutlined />
-                    </a>
+                    <Text className={style.NavBarText} onClick={e => e.preventDefault()} href="#">
+                        ABOUT US
+                    </Text>
                 </Dropdown>
-                <a href="#activities">ACTIVITIES</a>
-                <a href="#forum">GLOBAL BAKU FORUM</a>
-                <a href="#publications">PUBLICATIONS</a>
-                <a href="#newsroom">NEWSROOM</a>
+
+                <Dropdown overlay={aboutUsMenu} placement="bottomCenter">
+                    <Text className={style.NavBarText} onClick={e => e.preventDefault()} href="#">
+                        ACTIVITIES
+                    </Text>
+                </Dropdown>
+
+                <Text className={style.NavBarText} href="#forum">
+                    GLOBAL BAKU FORUM
+                </Text>
+
+                <Dropdown overlay={aboutUsMenu} placement="bottomCenter">
+                    <Text className={style.NavBarText} onClick={e => e.preventDefault()} href="#">
+                        PUBLICATIONS
+                    </Text>
+                </Dropdown>
+
+                <Text className={style.NavBarText} href="#newsroom">
+                    NEWSROOM
+                </Text>
             </div>
         </Header>
     );

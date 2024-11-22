@@ -5,7 +5,7 @@ const { Content } = Layout;
 
 const Index = () => {
     return (
-        <Content style={{ marginTop: '-64px' }} >
+        <Content >
             <Outlet />
         </Content>
     )
