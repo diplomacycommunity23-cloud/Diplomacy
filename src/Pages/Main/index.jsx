@@ -1,15 +1,17 @@
 import { Layout, Typography, Row, Col, Image } from 'antd';
+import style from './style.module.scss';
+import { ImageCarousel } from '../../Components';
+
 const { Content } = Layout;
 const { Title, Text } = Typography;
-import style from './style.module.scss';
 
 function App() {
   return (
-    <Layout className="layout">
+    <Layout className="layout" style={{ backgroundColor: "#0d1429" }}>
       <Content>
         <div style={{ height: '100vh', width: '100%', overflow: 'hidden' }}>
           <video style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0 }} autoPlay muted>
-            <source src="/Diplomacy1.mp4" type="video/mp4" />
+            <source src="src\Assets\Videos\Comp 1_5.mov" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -47,7 +49,7 @@ function App() {
           <Row className={style.MainImageRow}>
             <Image
               preview={false}
-              src="/HeaderLogo.png"
+              src="src\Assets\Logo\HeaderLogo.png"
             />
           </Row>
           <Row className={style.MainRow}>
@@ -82,6 +84,22 @@ function App() {
             </Col>
           </Row>
         </div>
+        <div className={style.RotatingContainer}>
+          <Row>
+            <Col span={11}>
+              <Text className={style.RotatingRowTitle}>COP29</Text>
+            </Col>
+            <Col span={11}>
+              <Text className={style.RotatingRowText}>
+                The 2024 United Nations Climate Change Conference or Conference of the Parties of the UNFCCC,
+                more commonly known as COP29, is the 29th United Nations Climate Change conference. COP29
+                is being held in Baku, Azerbaijan, from 11 to 22 November 2024. Mukhtar Babayev presides
+                COP29, while Samir Nuriyev heads the Organising Committee.
+              </Text>
+            </Col>
+          </Row>
+        </div>
+        <ImageCarousel />
       </Content>
     </Layout>
   );

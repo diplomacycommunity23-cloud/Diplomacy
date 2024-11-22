@@ -24,7 +24,7 @@ const Index = () => {
                 <Image
                     width={150}
                     preview={false}
-                    src="/HeaderLogo.png"
+                    src="src\Assets\Logo\HeaderLogo.png"
                 />
             </div>
             <div className={style.NavBar}>
