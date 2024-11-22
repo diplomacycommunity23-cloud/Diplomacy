@@ -1,12 +1,11 @@
 export default {
-    content: ["./src/**/*.{js,jsx,ts,tsx}"],
-    theme: {
-      extend: {
-        fontFamily: {
-          garamond: ["EB Garamond"],
-        },
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        Rubik: ["Rubik", "sans-serif"],
       },
     },
-    plugins: [],
-  };
-  
+  },
+  plugins: [],
+};

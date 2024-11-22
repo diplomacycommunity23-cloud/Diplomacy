@@ -3,7 +3,7 @@ import Routes from './Routes';
 
 const themeAntd = {
    token: {
-      fontFamily: 'EB Garamond',
+      fontFamily: 'Rubik, sans-serif',
       fontWeight: "600"
    },
 };

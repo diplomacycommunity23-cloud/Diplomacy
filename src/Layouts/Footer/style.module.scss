@@ -1,8 +1,24 @@
 .Footer {
+    padding: 50px 12% 90px 12%;
+    background: black;
+    color: white;
+    text-align: left;
+}
+
+.FooterRow {
     background: black;
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
     text-align: left;
+}
+
+.FooterText {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.FooterTitle {
+    color: white !important;
 }
