@@ -1,0 +1,35 @@
+.MainContainer {
+    background: '#fff';
+    padding: 20px 10%;
+}
+
+.MainRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.MainImageRow {
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.MainRowTitle {
+    display: flex;
+    color: #0d1429 !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.MainRowText {
+    display: flex;
+    color: #0d1429;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}

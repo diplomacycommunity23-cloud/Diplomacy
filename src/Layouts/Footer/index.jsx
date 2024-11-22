@@ -20,7 +20,7 @@ const Index = () => {
           <Input style={{ borderRadius: "0px", margin: '10px 0' }} placeholder="Name Surname" />
           <Input placeholder="Email" style={{ borderRadius: "0px", margin: '10px 0' }} />
           <TextArea style={{ borderRadius: "0px", margin: '10px 0' }} rows={3} placeholder="Your Message" />
-          <Button type="primary" style={{ borderRadius: "0px", width: "100%", marginTop: '10px' }}>Send</Button>
+          <Button style={{ backgroundColor: "Black", color: "white", border: "none", borderRadius: "0px", width: "100%", marginTop: '10px' }}>Send</Button>
         </Col>
         <Col span={5}>
           <Row>
