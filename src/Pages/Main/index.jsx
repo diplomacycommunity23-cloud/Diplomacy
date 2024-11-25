@@ -11,7 +11,7 @@ function App() {
       <Content>
         <div style={{ height: '100vh', width: '100%', overflow: 'hidden' }}>
           <video style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0 }} autoPlay muted>
-            <source src="src\Assets\Videos\Comp 1_5.mov" type="video/mp4" />
+            <source src="https://s3.dashgin.com/nihat-static/Comp%201_5.mov" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
