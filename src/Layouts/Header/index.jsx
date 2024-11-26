@@ -34,7 +34,7 @@ const Index = () => {
   return (
     <Header className={style.Header}>
       <div className={style.Logo}>
-        <Image width={150} preview={false} src={HeaderLogo} />
+        <Image width={"100%"} preview={false} src={HeaderLogo} />
       </div>
       <div className={style.NavBar}>
         <Dropdown overlay={aboutUsMenu} placement="bottomCenter">
