@@ -21,6 +21,7 @@ function App() {
             autoPlay
             loop
             muted
+            playsInline
           >
             <source
               src="https://pub-26df6477c0ae4e7ea812d29e75629675.r2.dev/Comp%201_5%20(1).mov"
