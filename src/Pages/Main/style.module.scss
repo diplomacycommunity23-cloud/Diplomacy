@@ -1,60 +1,64 @@
 .MainContainer {
-    background-color: '#ffffff';
-    padding: 20px 10%;
+  background-color: "#ffffff";
+  padding: 20px 10%;
 }
 
 .MainRow {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .MainImageRow {
-    margin: 40px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  margin: 40px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .MainRowTitle {
-    display: flex;
-    color: #ffffff !important;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
+  display: flex;
+  color: #ffffff !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 
 .MainRowText {
-    display: flex;
-    color: #ffffff;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 
 .RotatingContainer {
-    padding: 20px 10%;
+  padding: 20px 10%;
 }
 
 .RotatingRowTitle {
-    display: flex;
-    color: #ffffff !important;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    font-size: 7em;
+  display: flex;
+  color: #ffffff !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  font-size: 5em;
+  @media (max-width: 768px) {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
 }
 
 .RotatingRowText {
-    padding-top: 30px;
-    font-size: 1.1em;
-    display: flex;
-    color: #ffffff;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
-    width: 100%;
+  padding-top: 30px;
+  font-size: 1.1em;
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  width: 100%;
 }
