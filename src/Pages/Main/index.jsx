@@ -27,7 +27,7 @@ function App() {
         </div>
         <div className={style.MainContainer}>
           <Row className={style.MainRow}>
-            <Col span={11}>
+            <Col xs={24} sm={24} md={12} lg={11}>
               <Row>
                 <Title className={style.MainRowTitle} level={2}>
                   Who We Are
@@ -45,7 +45,7 @@ function App() {
                 </Text>
               </Row>
             </Col>
-            <Col span={11}>
+            <Col xs={24} sm={24} md={12} lg={11}>
               <Row>
                 <Title className={style.MainRowTitle} level={2}>
                   What is Lorem Ipsum?
@@ -66,7 +66,7 @@ function App() {
             <Image preview={false} src={HeaderLogo} />
           </Row>
           <Row className={style.MainRow}>
-            <Col span={11}>
+            <Col xs={24} sm={24} md={12} lg={11}>
               <Row>
                 <Title className={style.MainRowTitle} level={2}>
                   Our Story
@@ -83,7 +83,7 @@ function App() {
                 </Text>
               </Row>
             </Col>
-            <Col span={11}>
+            <Col xs={24} sm={24} md={12} lg={11}>
               <Row>
                 <Title className={style.MainRowTitle} level={2}>
                   Our Mission
@@ -104,10 +104,10 @@ function App() {
         </div>
         <div className={style.RotatingContainer}>
           <Row>
-            <Col span={11}>
+            <Col xs={24} sm={24} md={12} lg={11}>
               <Text className={style.RotatingRowTitle}>COP29</Text>
             </Col>
-            <Col span={11}>
+            <Col xs={24} sm={24} md={12} lg={11}>
               <Text className={style.RotatingRowText}>
                 The 2024 United Nations Climate Change Conference or Conference of the Parties of
                 the UNFCCC, more commonly known as COP29, is the 29th United Nations Climate Change

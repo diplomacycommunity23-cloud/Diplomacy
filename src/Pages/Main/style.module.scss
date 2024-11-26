@@ -46,10 +46,6 @@
   text-align: center;
   width: 100%;
   font-size: 5em;
-  @media (max-width: 768px) {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-  }
 }
 
 .RotatingRowText {
