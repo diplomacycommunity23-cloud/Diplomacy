@@ -21,7 +21,7 @@ function App() {
             autoPlay
             muted
           >
-            <source src="https://s3.dashgin.com/nihat-static/Comp%201_5.mov" type="video/mp4" />
+            <source src="https://pub-26df6477c0ae4e7ea812d29e75629675.r2.dev/Comp%201_5%20(1).mov" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
