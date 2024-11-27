@@ -15,9 +15,9 @@ const Index = () => {
   return (
     <Footer className={style.Footer}>
       <Row gutter={[40, 0]} className={style.FooterRow}>
-        <Col xs={18} sm={18} md={12} lg={5}>
-          <Text level={3} className={style.FooterTitle}>
-            Contact Us
+        <Col xs={18} sm={18} md={12} lg={6}>
+          <Text className={style.FooterTitle}>
+            Contact Secretary-General
           </Text>
           <Input style={{ borderRadius: "0px", margin: "10px 0" }} placeholder="Name Surname" />
           <Input placeholder="Email" style={{ borderRadius: "0px", margin: "10px 0" }} />
@@ -42,7 +42,7 @@ const Index = () => {
         <Col xs={24} sm={24} md={12} lg={5}>
           <Row>
             <Text level={3} className={style.FooterTitle}>
-              Contact Info
+              Contact Us
             </Text>
           </Row>
           <Row>
@@ -65,48 +65,46 @@ const Index = () => {
         </Col>
         <Col xs={24} sm={24} md={12} lg={7}>
           <Row>
-            <Text level={3} className={style.FooterTitle}>
-              Connect With Us
-            </Text>
-          </Row>
-          <Row>
-            <Col span={7}>
-              <Text className={[style.FooterText, style.ConnectWithUsText]}>FACEBOOK:</Text>
+            <Col span={24}>
+              <Text level={3} className={style.FooterTitle}>
+                Connect With Us
+              </Text>
             </Col>
-            <Col span={17}>
-              {" "}
+          </Row>
+          <Row gutter={[10, 0]}>
+            <Col span={6} className={style.FooterTextColumn}>
+              <Text className={style.FooterText}>FACEBOOK:</Text>
+            </Col>
+            <Col span={18}>
               <Text className={style.FooterText}>@DIPLOMACY COMMUNITY</Text>
             </Col>
           </Row>
-          <Row>
-            <Col span={7}>
-              <Text className={[style.FooterText, style.ConnectWithUsText]}>INSTAGRAM:</Text>
+          <Row gutter={[10, 0]}>
+            <Col span={6} className={style.FooterTextColumn}>
+              <Text className={style.FooterText}>INSTAGRAM:</Text>
             </Col>
-            <Col span={17}>
-              {" "}
+            <Col span={18}>
               <Text className={style.FooterText}>@DIPLOMACYCOMMUNITY</Text>
             </Col>
           </Row>
-          <Row>
-            <Col span={7}>
-              <Text className={[style.FooterText, style.ConnectWithUsText]}>LINKEDIN:</Text>
+          <Row gutter={[10, 0]}>
+            <Col span={6} className={style.FooterTextColumn}>
+              <Text className={style.FooterText}>LINKEDIN:</Text>
             </Col>
-            <Col span={17}>
-              {" "}
+            <Col span={18}>
               <Text className={style.FooterText}>@DIPLOMACY COMMUNITY</Text>
             </Col>
           </Row>
-          <Row>
-            <Col span={7}>
-              <Text className={[style.FooterText, style.ConnectWithUsText]}>X:</Text>
+          <Row gutter={[10, 0]}>
+            <Col span={6} className={style.FooterTextColumn}>
+              <Text className={style.FooterText}>X:</Text>
             </Col>
-            <Col span={17}>
-              {" "}
+            <Col span={18}>
               <Text className={style.FooterText}>@DIPLOMACY COMMUNITY</Text>
             </Col>
           </Row>
         </Col>
-        <Col xs={24} sm={24} md={12} lg={4}>
+        <Col xs={24} sm={24} md={12} lg={3}>
           <Row>
             <Text level={3} className={style.FooterTitle}>
               Publications
