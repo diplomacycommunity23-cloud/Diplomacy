@@ -1,7 +1,7 @@
 import { Layout, Typography, Row, Col, Image } from "antd";
 import style from "./style.module.scss";
 import { ImageCarousel } from "../../Components";
-import HeaderLogo from "../../Assets/Logo/HeaderLogo.png";
+import DiplomacyLogo from "../../Assets/Logo/DiplomacyLogo.png";
 const { Content } = Layout;
 const { Title, Text } = Typography;
 
@@ -50,26 +50,10 @@ function App() {
                 </Text>
               </Row>
             </Col>
-            <Col xs={24} sm={24} md={12} lg={11}>
-              <Row>
-                <Title className={style.MainRowTitle} level={2}>
-                  What is Lorem Ipsum?
-                </Title>
-              </Row>
-              <Row>
-                <Text className={style.MainRowText}>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                  Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when
-                  an unknown printer took a galley of type and scrambled it to make a type specimen
-                  book. It has survived not only five centuries, but also the leap into electronic
-                  typesetting, remaining essentially unchanged.
-                </Text>
-              </Row>
-            </Col>
           </Row>
-          <Row className={style.MainImageRow}>
-            <Image preview={false} src={HeaderLogo} />
-          </Row>
+          {/* <Row className={style.MainImageRow}>
+            <Image preview={false} src={DiplomacyLogo} />
+          </Row> */}
           <Row className={style.MainRow}>
             <Col xs={24} sm={24} md={12} lg={11}>
               <Row>

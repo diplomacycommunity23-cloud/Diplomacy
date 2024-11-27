@@ -15,7 +15,7 @@ const Index = () => {
   return (
     <Footer className={style.Footer}>
       <Row gutter={[40, 0]} className={style.FooterRow}>
-        <Col xs={18} sm={18} md={12} lg={6}>
+        <Col xs={18} sm={18} md={12} lg={5}>
           <Text level={3} className={style.FooterTitle}>
             Contact Us
           </Text>
@@ -46,51 +46,77 @@ const Index = () => {
             </Text>
           </Row>
           <Row>
-            <Text className={style.FooterText}>info@nizamiganjavi-ic.org</Text>
+            <Text className={style.FooterText}>info@diplomacycommunity.org</Text>
           </Row>
           <Row>
-            <Text className={style.FooterText}>+994 12 597 48 65</Text>
+            <Text className={style.FooterText}>dcc@ada.edu.az</Text>
           </Row>
           <Row>
+            <Text className={style.FooterText}>(+994 50) 460 02 11</Text>
+          </Row>
+          <Row>
+            <Text className={style.FooterText}>diplomacycommunity.org</Text>
+          </Row>
+          {/* <Row>
             <Text className={style.FooterText}>
-              Samad Vurgun str., World Business Center, Baku, Azerbaijan, AZ1014
+              Ahmad Aghaoghlu str. 61, Baku, Azerbaijan, AZ1008
             </Text>
-          </Row>
+          </Row> */}
         </Col>
-        <Col xs={24} sm={24} md={12} lg={5}>
+        <Col xs={24} sm={24} md={12} lg={7}>
           <Row>
             <Text level={3} className={style.FooterTitle}>
-              About Us
+              Connect With Us
             </Text>
           </Row>
           <Row>
-            <Text className={style.FooterText}>info@nizamiganjavi-ic.org</Text>
+            <Col span={7}>
+              <Text className={[style.FooterText, style.ConnectWithUsText]}>FACEBOOK:</Text>
+            </Col>
+            <Col span={17}>
+              {" "}
+              <Text className={style.FooterText}>@DIPLOMACY COMMUNITY</Text>
+            </Col>
           </Row>
           <Row>
-            <Text className={style.FooterText}>+994 12 597 48 65</Text>
+            <Col span={7}>
+              <Text className={[style.FooterText, style.ConnectWithUsText]}>INSTAGRAM:</Text>
+            </Col>
+            <Col span={17}>
+              {" "}
+              <Text className={style.FooterText}>@DIPLOMACYCOMMUNITY</Text>
+            </Col>
           </Row>
           <Row>
-            <Text className={style.FooterText}>
-              Samad Vurgun str., World Business Center, Baku, Azerbaijan, AZ1014
-            </Text>
+            <Col span={7}>
+              <Text className={[style.FooterText, style.ConnectWithUsText]}>LINKEDIN:</Text>
+            </Col>
+            <Col span={17}>
+              {" "}
+              <Text className={style.FooterText}>@DIPLOMACY COMMUNITY</Text>
+            </Col>
+          </Row>
+          <Row>
+            <Col span={7}>
+              <Text className={[style.FooterText, style.ConnectWithUsText]}>X:</Text>
+            </Col>
+            <Col span={17}>
+              {" "}
+              <Text className={style.FooterText}>@DIPLOMACY COMMUNITY</Text>
+            </Col>
           </Row>
         </Col>
-        <Col xs={24} sm={24} md={12} lg={5}>
+        <Col xs={24} sm={24} md={12} lg={4}>
           <Row>
             <Text level={3} className={style.FooterTitle}>
               Publications
             </Text>
           </Row>
           <Row>
-            <Text className={style.FooterText}>info@nizamiganjavi-ic.org</Text>
+            <Text className={style.FooterText}>Become an Author</Text>
           </Row>
           <Row>
-            <Text className={style.FooterText}>+994 12 597 48 65</Text>
-          </Row>
-          <Row>
-            <Text className={style.FooterText}>
-              Samad Vurgun str., World Business Center, Baku, Azerbaijan, AZ1014
-            </Text>
+            <Text className={style.FooterText}> Share Your Research</Text>
           </Row>
         </Col>
         <Col xs={24} sm={24} md={12} lg={3}>
