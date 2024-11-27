@@ -142,12 +142,12 @@ const Index = () => {
         </div>
       ) : (
         <Drawer
-          title="Menu"
+          title="Diplomacy Community"
           placement="bottom"
           closable={true}
           onClose={handleDrawerToggle}
           visible={drawerVisible}
-          height="90%"
+          height="100%"
         >
           <Collapse>
             {menuItems.map(({ header, submenu }) => (
