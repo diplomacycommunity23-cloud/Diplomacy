@@ -15,7 +15,7 @@ const Index = () => {
   return (
     <Footer className={style.Footer}>
       <Row gutter={[40, 0]} className={style.FooterRow}>
-        <Col xs={18} sm={18} md={12} lg={6}>
+        <Col xs={24} sm={24} md={12} lg={6}>
           <Text className={style.FooterTitle}>
             Contact Secretary-General
           </Text>
@@ -72,34 +72,34 @@ const Index = () => {
             </Col>
           </Row>
           <Row gutter={[10, 0]}>
-            <Col span={6} className={style.FooterTextColumn}>
+            <Col xs={7} sm={8} md={8} lg={7} className={[style.FooterTextColumn, style.ConnectWithUsText]}>
               <Text className={style.FooterText}>FACEBOOK:</Text>
             </Col>
-            <Col span={18}>
+            <Col xs={17} sm={16} md={16} lg={17}>
               <Text className={style.FooterText}>@DIPLOMACY COMMUNITY</Text>
             </Col>
           </Row>
           <Row gutter={[10, 0]}>
-            <Col span={6} className={style.FooterTextColumn}>
+            <Col xs={7} sm={8} md={8} lg={7} className={[style.FooterTextColumn, style.ConnectWithUsText]}>
               <Text className={style.FooterText}>INSTAGRAM:</Text>
             </Col>
-            <Col span={18}>
+            <Col xs={17} sm={16} md={16} lg={17}>
               <Text className={style.FooterText}>@DIPLOMACYCOMMUNITY</Text>
             </Col>
           </Row>
           <Row gutter={[10, 0]}>
-            <Col span={6} className={style.FooterTextColumn}>
+            <Col xs={7} sm={8} md={8} lg={7} className={[style.FooterTextColumn, style.ConnectWithUsText]}>
               <Text className={style.FooterText}>LINKEDIN:</Text>
             </Col>
-            <Col span={18}>
+            <Col xs={17} sm={16} md={16} lg={17}>
               <Text className={style.FooterText}>@DIPLOMACY COMMUNITY</Text>
             </Col>
           </Row>
           <Row gutter={[10, 0]}>
-            <Col span={6} className={style.FooterTextColumn}>
+            <Col xs={7} sm={8} md={8} lg={7} className={[style.FooterTextColumn, style.ConnectWithUsText]}>
               <Text className={style.FooterText}>X:</Text>
             </Col>
-            <Col span={18}>
+            <Col xs={17} sm={16} md={16} lg={17}>
               <Text className={style.FooterText}>@DIPLOMACY COMMUNITY</Text>
             </Col>
           </Row>
