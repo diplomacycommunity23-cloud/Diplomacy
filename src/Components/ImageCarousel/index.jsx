@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import style from "./style.module.scss";
-import { images } from "../Assets/Rotate";
+import { images } from "../../Assets/Rotate";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import React, { useState, useEffect } from "react";
 

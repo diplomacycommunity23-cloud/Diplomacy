@@ -3,7 +3,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Rubik: ["Rubik", "sans-serif"],
+        EBGaramond: ["EB Garamond", "sans-serif"],
       },
     },
   },

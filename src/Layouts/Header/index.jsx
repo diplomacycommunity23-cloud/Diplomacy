@@ -7,6 +7,7 @@ const { Text } = Typography;
 const { Panel } = Collapse;
 import DiplomaticLogo from "../../Assets/Logo/DiplomaticLogo.png";
 import DiplomacyLogo from "../../Assets/Logo/DiplomacyLogo.png";
+import { MenuDrawer } from "../../Components";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -14,12 +15,7 @@ const Index = () => {
     width: window.innerWidth,
     height: window.innerHeight,
   });
-
   const [drawerVisible, setDrawerVisible] = useState(false);
-
-  const handleDrawerToggle = () => {
-    setDrawerVisible(!drawerVisible);
-  };
 
   const menuItems = [
     {
@@ -74,14 +70,18 @@ const Index = () => {
     },
   ];
 
-  useEffect(() => {
-    const handleResize = () => {
-      setScreenSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    };
+  const openDrawer = () => {
+    setDrawerVisible(!drawerVisible);
+  };
 
+  const handleResize = () => {
+    setScreenSize({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  };
+
+  useEffect(() => {
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -107,7 +107,7 @@ const Index = () => {
         ) : (
           <Button
             className={style.MenuButton}
-            onClick={handleDrawerToggle}
+            onClick={openDrawer}
             style={{ background: "transparent", border: "none" }}
             icon={
               <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
@@ -141,28 +141,7 @@ const Index = () => {
           ))}
         </div>
       ) : (
-        <Drawer
-          title="Diplomacy Community"
-          placement="bottom"
-          closable={true}
-          onClose={handleDrawerToggle}
-          visible={drawerVisible}
-          height="100%"
-        >
-          <Collapse>
-            {menuItems.map(({ header, submenu }) => (
-              <Panel header={header} key={header}>
-                <Menu>
-                  {submenu.map(({ key, label, path }) => (
-                    <Menu.Item key={key} onClick={() => navigate(path)}>
-                      {label}
-                    </Menu.Item>
-                  ))}
-                </Menu>
-              </Panel>
-            ))}
-          </Collapse>
-        </Drawer>
+        <MenuDrawer items={menuItems} open={drawerVisible} openDrawer={openDrawer} />
       )}
     </Header>
   );
