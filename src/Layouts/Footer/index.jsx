@@ -4,6 +4,7 @@ import {
   TwitterOutlined,
   InstagramOutlined,
   LinkedinOutlined,
+  YoutubeOutlined,
 } from "@ant-design/icons";
 import { Layout, Typography, Input, Button, Row, Col } from "antd";
 
@@ -16,9 +17,7 @@ const Index = () => {
     <Footer className={style.Footer}>
       <Row gutter={[40, 0]} className={style.FooterRow}>
         <Col xs={24} sm={24} md={12} lg={6}>
-          <Text className={style.FooterTitle}>
-            Contact Secretary-General
-          </Text>
+          <Text className={style.FooterTitle}>Contact Secretary-General</Text>
           <Input style={{ borderRadius: "0px", margin: "10px 0" }} placeholder="Name Surname" />
           <Input placeholder="Email" style={{ borderRadius: "0px", margin: "10px 0" }} />
           <TextArea
@@ -72,7 +71,13 @@ const Index = () => {
             </Col>
           </Row>
           <Row gutter={[10, 0]}>
-            <Col xs={7} sm={8} md={8} lg={7} className={[style.FooterTextColumn, style.ConnectWithUsText]}>
+            <Col
+              xs={7}
+              sm={8}
+              md={8}
+              lg={7}
+              className={[style.FooterTextColumn, style.ConnectWithUsText]}
+            >
               <Text className={style.FooterText}>FACEBOOK:</Text>
             </Col>
             <Col xs={17} sm={16} md={16} lg={17}>
@@ -80,7 +85,13 @@ const Index = () => {
             </Col>
           </Row>
           <Row gutter={[10, 0]}>
-            <Col xs={7} sm={8} md={8} lg={7} className={[style.FooterTextColumn, style.ConnectWithUsText]}>
+            <Col
+              xs={7}
+              sm={8}
+              md={8}
+              lg={7}
+              className={[style.FooterTextColumn, style.ConnectWithUsText]}
+            >
               <Text className={style.FooterText}>INSTAGRAM:</Text>
             </Col>
             <Col xs={17} sm={16} md={16} lg={17}>
@@ -88,7 +99,13 @@ const Index = () => {
             </Col>
           </Row>
           <Row gutter={[10, 0]}>
-            <Col xs={7} sm={8} md={8} lg={7} className={[style.FooterTextColumn, style.ConnectWithUsText]}>
+            <Col
+              xs={7}
+              sm={8}
+              md={8}
+              lg={7}
+              className={[style.FooterTextColumn, style.ConnectWithUsText]}
+            >
               <Text className={style.FooterText}>LINKEDIN:</Text>
             </Col>
             <Col xs={17} sm={16} md={16} lg={17}>
@@ -96,7 +113,13 @@ const Index = () => {
             </Col>
           </Row>
           <Row gutter={[10, 0]}>
-            <Col xs={7} sm={8} md={8} lg={7} className={[style.FooterTextColumn, style.ConnectWithUsText]}>
+            <Col
+              xs={7}
+              sm={8}
+              md={8}
+              lg={7}
+              className={[style.FooterTextColumn, style.ConnectWithUsText]}
+            >
               <Text className={style.FooterText}>X:</Text>
             </Col>
             <Col xs={17} sm={16} md={16} lg={17}>
@@ -122,10 +145,21 @@ const Index = () => {
             Follow Us
           </Text>
           <div style={{ display: "flex", gap: "10px" }}>
-            <FacebookOutlined style={{ fontSize: "24px" }} />
-            <TwitterOutlined style={{ fontSize: "24px" }} />
-            <InstagramOutlined style={{ fontSize: "24px" }} />
-            <LinkedinOutlined style={{ fontSize: "24px" }} />
+            <Col style={{padding:"0px"}} xs={5}>
+              <FacebookOutlined style={{ fontSize: "24px" }} />
+            </Col>
+            <Col style={{padding:"0px"}} xs={5}>
+              <TwitterOutlined style={{ fontSize: "24px" }} />
+            </Col>
+            <Col style={{padding:"0px"}} xs={5}>
+              <InstagramOutlined style={{ fontSize: "24px" }} />
+            </Col>
+            <Col style={{padding:"0px"}} xs={5}>
+              <LinkedinOutlined style={{ fontSize: "24px" }} />
+            </Col>
+            <Col style={{padding:"0px"}} xs={5}>
+              <YoutubeOutlined style={{ fontSize: "24px" }} />
+            </Col>
           </div>
         </Col>
       </Row>
