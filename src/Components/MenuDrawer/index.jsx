@@ -19,8 +19,8 @@ const ImageCarousel = ({ open, openDrawer, items }) => {
   };
 
   const handleDrawerClose = () => {
-    openDrawer(); // Close the drawer
-    setActivePanels([]); // Reset all panels
+    openDrawer(); 
+    setActivePanels([]);
   };
 
   return (
@@ -70,8 +70,8 @@ const ImageCarousel = ({ open, openDrawer, items }) => {
                 <Menu.Item
                   key={key}
                   onClick={() => {
-                    navigate(path); // Navigate to the specified path
-                    handleDrawerClose(); // Close the drawer after navigation
+                    navigate(path);
+                    handleDrawerClose(); 
                   }}
                 >
                   <Text className={style.SubMenuText}>{label}</Text>
