@@ -5,6 +5,7 @@ import {
   InstagramOutlined,
   LinkedinOutlined,
   YoutubeOutlined,
+  CopyrightOutlined
 } from "@ant-design/icons";
 import { Layout, Typography, Input, Button, Row, Col } from "antd";
 
@@ -170,6 +171,10 @@ const Index = () => {
             </Col>
           </div>
         </Col>
+      </Row>
+      <Row>
+        <CopyrightOutlined style={{paddingTop:"10px", marginRight:"10px"}}/>
+        <Text className={style.FooterText}>All rights reserved.</Text>
       </Row>
     </Footer>
   );
