@@ -3,7 +3,7 @@ import style from "./style.module.scss";
 import { ImageCarousel } from "../../Components";
 import DiplomacyLogo from "../../Assets/Logo/DiplomacyLogo.png";
 const { Content } = Layout;
-const {  Text } = Typography;
+const { Text } = Typography;
 
 function App() {
   return (
@@ -29,6 +29,13 @@ function App() {
             />
             Your browser does not support the video tag.
           </video>
+          <div className={style.DiplomacyVideoMainContainer}>
+            <div className={style.DiplomacyVideoContainer}>
+              <Text className={style.DiplomacyVideoTitle} level={2}>
+                Diplomacy Community
+              </Text>
+            </div>
+          </div>
         </div>
         <div className={style.MainContainer}>
           <Row className={style.MainRow}>
