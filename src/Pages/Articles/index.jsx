@@ -1,36 +1,12 @@
 import { Layout, Typography, Row, Col } from "antd";
-import { ImageCarousel } from "../../Components";
-
 const { Content } = Layout;
 const { Text } = Typography;
-
 import style from "./style.module.scss";
 
 function App() {
   return (
-    <Layout className="layout" style={{ backgroundColor: "#0d1429" }}>
+    <Layout className="layout" style={{ backgroundColor: "#0d1429"}}>
       <Content>
-        <div style={{ height: "100vh", width: "100%", overflow: "hidden" }}>
-          <video className={style.DiplomacyVideo} autoPlay loop muted playsInline>
-            <source
-              src="https://pub-26df6477c0ae4e7ea812d29e75629675.r2.dev/Comp%201_5%20(1).mov"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-          <div className={style.DiplomacyVideoMainContainer}>
-            <div className={style.DiplomacyVideoContainer}>
-              <Row>
-                <Text className={style.DiplomacyVideoTitle}>Diplomacy Community</Text>
-              </Row>
-              <Row>
-                <Text className={style.DiplomacyVideoText}>
-                  Diplomacy in Dynamics, Dialogue for Development
-                </Text>
-              </Row>
-            </div>
-          </div>
-        </div>
         <div className={style.MainContainer}>
           <Row className={style.MainRow}>
             <Col xs={24} sm={24} md={12} lg={11}>
@@ -86,22 +62,6 @@ function App() {
             </Col>
           </Row>
         </div>
-        <div className={style.RotatingContainer}>
-          <Row>
-            <Col xs={24} sm={24} md={12} lg={11}>
-              <Text className={style.RotatingRowTitle}>COP29</Text>
-            </Col>
-            <Col xs={24} sm={24} md={12} lg={11}>
-              <Text className={style.MainRowText}>
-                The 2024 United Nations Climate Change Conference or Conference of the Parties of
-                the UNFCCC, more commonly known as COP29, is the 29th United Nations Climate Change
-                conference. COP29 is being held in Baku, Azerbaijan, from 11 to 22 November 2024.
-                Mukhtar Babayev presides COP29, while Samir Nuriyev heads the Organising Committee.
-              </Text>
-            </Col>
-          </Row>
-        </div>
-        <ImageCarousel />
       </Content>
     </Layout>
   );
