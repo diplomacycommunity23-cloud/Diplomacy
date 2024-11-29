@@ -10,19 +10,7 @@ function App() {
     <Layout className="layout" style={{ backgroundColor: "#0d1429" }}>
       <Content>
         <div style={{ height: "100vh", width: "100%", overflow: "hidden" }}>
-          <video
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              position: "absolute",
-              top: 0,
-            }}
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
+          <video className={style.DiplomacyVideo} autoPlay loop muted playsInline>
             <source
               src="https://pub-26df6477c0ae4e7ea812d29e75629675.r2.dev/Comp%201_5%20(1).mov"
               type="video/mp4"
@@ -31,9 +19,14 @@ function App() {
           </video>
           <div className={style.DiplomacyVideoMainContainer}>
             <div className={style.DiplomacyVideoContainer}>
-              <Text className={style.DiplomacyVideoTitle} level={2}>
-                Diplomacy Community
-              </Text>
+              <Row>
+                <Text className={style.DiplomacyVideoTitle}>Diplomacy Community</Text>
+              </Row>
+              <Row>
+                <Text className={style.DiplomacyVideoText}>
+                  Diplomacy in Dynamics, Dialogue for Development
+                </Text>
+              </Row>
             </div>
           </div>
         </div>
@@ -41,9 +34,7 @@ function App() {
           <Row className={style.MainRow}>
             <Col xs={24} sm={24} md={12} lg={11}>
               <Row>
-                <Text className={style.MainRowTitle} level={2}>
-                  Who We Are
-                </Text>
+                <Text className={style.MainRowTitle}>Who We Are</Text>
               </Row>
               <Row>
                 <Text className={style.MainRowText}>
@@ -64,9 +55,7 @@ function App() {
           <Row className={style.MainRow}>
             <Col xs={24} sm={24} md={12} lg={11}>
               <Row>
-                <Text className={style.MainRowTitle} level={2}>
-                  Our Story
-                </Text>
+                <Text className={style.MainRowTitle}>Our Story</Text>
               </Row>
               <Row>
                 <Text className={style.MainRowText}>
@@ -81,9 +70,7 @@ function App() {
             </Col>
             <Col xs={24} sm={24} md={12} lg={11}>
               <Row>
-                <Text className={style.MainRowTitle} level={2}>
-                  Our Mission
-                </Text>
+                <Text className={style.MainRowTitle}>Our Mission</Text>
               </Row>
               <Row>
                 <Text className={style.MainRowText}>
