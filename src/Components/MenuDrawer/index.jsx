@@ -1,6 +1,8 @@
+import React, { useState } from "react";
 import { Menu, Drawer, Collapse, Typography, Image } from "antd";
 import DiplomacyLogo from "../../Assets/Logo/DiplomacyLogo.png";
 import { CloseOutlined, DownOutlined, RightOutlined } from "@ant-design/icons";
+import { useNavigate } from "react-router-dom";
 
 const { Panel } = Collapse;
 const { Text } = Typography;
@@ -9,8 +11,26 @@ import "./styles.scss";
 import style from "./style.module.scss";
 
 const ImageCarousel = ({ open, openDrawer, items }) => {
+  const navigate = useNavigate();
+  const [activePanels, setActivePanels] = useState([]);
+
+  const handlePanelChange = (keys) => {
+    setActivePanels(keys);
+  };
+
+  const handleDrawerClose = () => {
+    openDrawer(); // Close the drawer
+    setActivePanels([]); // Reset all panels
+  };
+
   return (
-    <Drawer placement="bottom" closable={true} onClose={openDrawer} open={open} height="100%">
+    <Drawer
+      placement="bottom"
+      closable={true}
+      onClose={handleDrawerClose}
+      open={open}
+      height="100%"
+    >
       <div className={style.DrawerHeader}>
         <div className={style.DiplomacyLogo}>
           <Image
@@ -20,11 +40,15 @@ const ImageCarousel = ({ open, openDrawer, items }) => {
             src={DiplomacyLogo}
           />
         </div>
-        <div onClick={openDrawer} className={style.DrawerCloseIcon}>
+        <div onClick={handleDrawerClose} className={style.DrawerCloseIcon}>
           <CloseOutlined style={{ color: "#ffffff" }} />
         </div>
       </div>
-      <Collapse className={style.DrawerCollapse}>
+      <Collapse
+        className={style.DrawerCollapse}
+        activeKey={activePanels}
+        onChange={handlePanelChange}
+      >
         {items.map(({ header, submenu }) => (
           <Panel
             header={
@@ -43,7 +67,13 @@ const ImageCarousel = ({ open, openDrawer, items }) => {
           >
             <Menu>
               {submenu.map(({ key, label, path }) => (
-                <Menu.Item key={key} onClick={() => navigate(path)}>
+                <Menu.Item
+                  key={key}
+                  onClick={() => {
+                    navigate(path); // Navigate to the specified path
+                    handleDrawerClose(); // Close the drawer after navigation
+                  }}
+                >
                   <Text className={style.SubMenuText}>{label}</Text>
                 </Menu.Item>
               ))}
