@@ -72,58 +72,66 @@ const Index = () => {
           </Row>
           <Row gutter={[10, 0]}>
             <Col
-              xs={7}
+              xs={8}
               sm={8}
               md={8}
               lg={7}
-              className={[style.FooterTextColumn, style.ConnectWithUsText]}
+              className={[style.FooterTextColumn, style.ConnectWithUsTitle]}
             >
-              <Text className={style.FooterText}>FACEBOOK:</Text>
+              <Text className={[style.FooterText, style.ConnectWithUsText]}>FACEBOOK:</Text>
             </Col>
-            <Col xs={17} sm={16} md={16} lg={17}>
-              <Text className={style.FooterText}>@DIPLOMACY COMMUNITY</Text>
+            <Col xs={16} sm={16} md={16} lg={17}>
+              <Text className={[style.FooterText, style.ConnectWithUsText]}>
+                @DIPLOMACY COMMUNITY
+              </Text>
             </Col>
           </Row>
           <Row gutter={[10, 0]}>
             <Col
-              xs={7}
+              xs={8}
               sm={8}
               md={8}
               lg={7}
-              className={[style.FooterTextColumn, style.ConnectWithUsText]}
+              className={[style.FooterTextColumn, style.ConnectWithUsTitle]}
             >
-              <Text className={style.FooterText}>INSTAGRAM:</Text>
+              <Text className={[style.FooterText, style.ConnectWithUsText]}>INSTAGRAM:</Text>
             </Col>
-            <Col xs={17} sm={16} md={16} lg={17}>
-              <Text className={style.FooterText}>@DIPLOMACYCOMMUNITY</Text>
+            <Col xs={16} sm={16} md={16} lg={17}>
+              <Text className={[style.FooterText, style.ConnectWithUsText]}>
+                @DIPLOMACYCOMMUNITY
+              </Text>
             </Col>
           </Row>
           <Row gutter={[10, 0]}>
             <Col
-              xs={7}
+              xs={8}
               sm={8}
               md={8}
               lg={7}
-              className={[style.FooterTextColumn, style.ConnectWithUsText]}
+              className={[style.FooterTextColumn, style.ConnectWithUsTitle]}
             >
-              <Text className={style.FooterText}>LINKEDIN:</Text>
+              <Text className={[style.FooterText, style.ConnectWithUsText]}>LINKEDIN:</Text>
             </Col>
-            <Col xs={17} sm={16} md={16} lg={17}>
-              <Text className={style.FooterText}>@DIPLOMACY COMMUNITY</Text>
+            <Col xs={16} sm={16} md={16} lg={17}>
+              <Text className={[style.FooterText, style.ConnectWithUsText]}>
+                @DIPLOMACY COMMUNITY
+              </Text>
             </Col>
           </Row>
           <Row gutter={[10, 0]}>
             <Col
-              xs={7}
+              xs={8}
               sm={8}
               md={8}
               lg={7}
-              className={[style.FooterTextColumn, style.ConnectWithUsText]}
+              className={[style.FooterTextColumn, style.ConnectWithUsTitle]}
             >
-              <Text className={style.FooterText}>X:</Text>
+              <Text className={[style.FooterText, style.ConnectWithUsText]}>X:</Text>
             </Col>
-            <Col xs={17} sm={16} md={16} lg={17}>
-              <Text className={style.FooterText}>@DIPLOMACY COMMUNITY</Text>
+            <Col xs={16} sm={16} md={16} lg={17}>
+              <Text className={[style.FooterText, style.ConnectWithUsText]}>
+                @DIPLOMACY COMMUNITY
+              </Text>
             </Col>
           </Row>
         </Col>
@@ -145,19 +153,19 @@ const Index = () => {
             Follow Us
           </Text>
           <div style={{ display: "flex", gap: "10px" }}>
-            <Col style={{padding:"0px"}} xs={5}>
+            <Col style={{ padding: "0px" }} xs={5}>
               <FacebookOutlined style={{ fontSize: "24px" }} />
             </Col>
-            <Col style={{padding:"0px"}} xs={5}>
+            <Col style={{ padding: "0px" }} xs={5}>
               <TwitterOutlined style={{ fontSize: "24px" }} />
             </Col>
-            <Col style={{padding:"0px"}} xs={5}>
+            <Col style={{ padding: "0px" }} xs={5}>
               <InstagramOutlined style={{ fontSize: "24px" }} />
             </Col>
-            <Col style={{padding:"0px"}} xs={5}>
+            <Col style={{ padding: "0px" }} xs={5}>
               <LinkedinOutlined style={{ fontSize: "24px" }} />
             </Col>
-            <Col style={{padding:"0px"}} xs={5}>
+            <Col style={{ padding: "0px" }} xs={5}>
               <YoutubeOutlined style={{ fontSize: "24px" }} />
             </Col>
           </div>

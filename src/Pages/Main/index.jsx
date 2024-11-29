@@ -3,7 +3,7 @@ import style from "./style.module.scss";
 import { ImageCarousel } from "../../Components";
 import DiplomacyLogo from "../../Assets/Logo/DiplomacyLogo.png";
 const { Content } = Layout;
-const { Title, Text } = Typography;
+const {  Text } = Typography;
 
 function App() {
   return (
@@ -34,9 +34,9 @@ function App() {
           <Row className={style.MainRow}>
             <Col xs={24} sm={24} md={12} lg={11}>
               <Row>
-                <Title className={style.MainRowTitle} level={2}>
+                <Text className={style.MainRowTitle} level={2}>
                   Who We Are
-                </Title>
+                </Text>
               </Row>
               <Row>
                 <Text className={style.MainRowText}>
@@ -57,9 +57,9 @@ function App() {
           <Row className={style.MainRow}>
             <Col xs={24} sm={24} md={12} lg={11}>
               <Row>
-                <Title className={style.MainRowTitle} level={2}>
+                <Text className={style.MainRowTitle} level={2}>
                   Our Story
-                </Title>
+                </Text>
               </Row>
               <Row>
                 <Text className={style.MainRowText}>
@@ -74,9 +74,9 @@ function App() {
             </Col>
             <Col xs={24} sm={24} md={12} lg={11}>
               <Row>
-                <Title className={style.MainRowTitle} level={2}>
+                <Text className={style.MainRowTitle} level={2}>
                   Our Mission
-                </Title>
+                </Text>
               </Row>
               <Row>
                 <Text className={style.MainRowText}>
@@ -97,7 +97,7 @@ function App() {
               <Text className={style.RotatingRowTitle}>COP29</Text>
             </Col>
             <Col xs={24} sm={24} md={12} lg={11}>
-              <Text className={style.RotatingRowText}>
+              <Text className={style.MainRowText}>
                 The 2024 United Nations Climate Change Conference or Conference of the Parties of
                 the UNFCCC, more commonly known as COP29, is the 29th United Nations Climate Change
                 conference. COP29 is being held in Baku, Azerbaijan, from 11 to 22 November 2024.

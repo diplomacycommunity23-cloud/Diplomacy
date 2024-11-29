@@ -1,6 +1,8 @@
 .MainContainer {
   background-color: "#ffffff";
   padding: 20px 10%;
+  border-top: #ffffff 1px solid;
+
 }
 
 .MainRow {
@@ -23,6 +25,14 @@
   justify-content: center;
   text-align: center;
   width: 100%;
+  font-size: 3em;
+  font-weight: 800;
+  margin: 5% 0px 1% 0px;
+  @media (max-width: 768px) {
+    font-size: 2em;
+    margin: 13% 0px 1% 0px;
+    border-bottom: #ffffff solid 0.5px;
+  }
 }
 
 .MainRowText {
@@ -32,10 +42,18 @@
   justify-content: center;
   text-align: center;
   width: 100%;
+  font-size: 1.5em;
+  font-weight: 500;
+  @media (max-width: 768px) {
+    font-size: 1.2em;
+    text-align: justify;
+  }
 }
 
 .RotatingContainer {
+  border-top: #ffffff 1px solid;
   padding: 20px 10%;
+  margin-top: 5%;
 }
 
 .RotatingRowTitle {
@@ -46,15 +64,17 @@
   text-align: center;
   width: 100%;
   font-size: 5em;
+  font-weight: 800;
 }
 
 .RotatingRowText {
   padding-top: 30px;
-  font-size: 1.1em;
   display: flex;
   color: #ffffff;
   align-items: center;
   justify-content: center;
   text-align: justify;
   width: 100%;
+  font-size: 1.2em;
+  font-weight: 500;
 }
