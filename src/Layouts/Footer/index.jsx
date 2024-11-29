@@ -1,7 +1,7 @@
 import style from "./style.module.scss";
 import {
   FacebookOutlined,
-  TwitterOutlined,
+  XOutlined,
   InstagramOutlined,
   LinkedinOutlined,
   YoutubeOutlined,
@@ -158,7 +158,7 @@ const Index = () => {
               <FacebookOutlined style={{ fontSize: "24px" }} />
             </Col>
             <Col style={{ padding: "0px" }} xs={5}>
-              <TwitterOutlined style={{ fontSize: "24px" }} />
+              <XOutlined style={{ fontSize: "24px" }} />
             </Col>
             <Col style={{ padding: "0px" }} xs={5}>
               <InstagramOutlined style={{ fontSize: "24px" }} />
