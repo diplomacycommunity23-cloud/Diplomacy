@@ -11,20 +11,14 @@ function App() {
     <Layout className="layout" style={{ backgroundColor: "#0d1429" }}>
       <Content>
         <div style={{ height: "100vh", width: "100%", overflow: "hidden" }}>
-          {/* <video className={style.DiplomacyVideo} autoPlay loop muted playsInline>
+          <video className={style.DiplomacyVideo} autoPlay loop muted playsInline>
             <source
               src="https://minio.dashgin.com/api/v1/buckets/nihat-static/objects/download?preview=true&prefix=DiplomacyVideo.webm&version_id=null"
               type="video/mp4"
             />
             Your browser does not support the video tag.
-          </video> */}
-                    <iframe
-            className={style.DiplomacyVideo}
-            src="https://www.youtube.com/embed/TEE_bzPvD-M?autoplay=1&loop=1&mute=1&controls=0&vq=hd2160"
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-          ></iframe>
+          </video>
+
           <div className={style.DiplomacyVideoMainContainer}>
             <div className={style.DiplomacyVideoContainer}>
               <Row>
