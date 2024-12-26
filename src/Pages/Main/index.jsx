@@ -13,7 +13,7 @@ function App() {
         <div style={{ height: "100vh", width: "100%", overflow: "hidden" }}>
           <video className={style.DiplomacyVideo} autoPlay loop muted playsInline>
             <source
-              src="https://pub-26df6477c0ae4e7ea812d29e75629675.r2.dev/DiplomacyVideo.webm"
+              src="https://minio.dashgin.com/api/v1/buckets/nihat-static/objects/download?preview=true&prefix=DiplomacyVideo.webm&version_id=null"
               type="video/mp4"
             />
             Your browser does not support the video tag.
