@@ -22,7 +22,7 @@ function App() {
           <div className={style.DiplomacyVideoMainContainer}>
             <div className={style.DiplomacyVideoContainer}>
               <Row>
-                <Text className={style.DiplomacyVideoTitle}>Diplomacy Community</Text>
+                <Text className={style.DiplomacyVideoTitle}>Diplomatic Community</Text>
               </Row>
               <Row>
                 <Text className={style.DiplomacyVideoText}>
@@ -87,7 +87,7 @@ function App() {
             </Col>
           </Row>
         </div>
-        <div className={style.RotatingContainer}>
+        {/* <div className={style.RotatingContainer}>
           <Row>
             <Col xs={24} sm={24} md={12} lg={11}>
               <Text className={style.RotatingRowTitle}>COP29</Text>
@@ -101,8 +101,8 @@ function App() {
               </Text>
             </Col>
           </Row>
-        </div>
-        <ImageCarousel />
+        </div> */}
+        {/* <ImageCarousel /> */}
       </Content>
     </Layout>
   );

@@ -33,15 +33,17 @@ const Index = () => {
       header: "ACTIVITIES",
       submenu: [
         { key: "highLevelMeetings", label: "High Level Meetings", path: "/highlevelmeetings" },
-        { key: "diplomatMeetings", label: "Diplomat Meetings", path: "/diplomatmeetings" },
         { key: "debateSessions", label: "Debate Sessions", path: "/debatesessions" },
         { key: "workshops", label: "Workshops and Seminars", path: "/workshops" },
-        { key: "networkingEvents", label: "Networking Events", path: "/networkingevents" },
-        { key: "culturalExchange", label: "Cultural Exchange Programs", path: "/culturalexchange" },
+        { key: "networkingEvents", label: "Networking Events", disabled: true },
+        { key: "diplomatMeetings", label: "Diplomat Meetings", disabled: true },
+        { key: "culturalExchange", label: "Cultural Exchange Programs", disabled: true },
       ],
     },
     {
-      header: "DIPLOMACY COMMUNITY",
+      header: <Text className={style.NavBarText} onClick={(e) => e.preventDefault()}>
+      DIPLOMATIC&nbsp;&nbsp;&nbsp;COMMUNITY
+    </Text>,
       submenu: [
         { key: "constitution", label: "Constitution", path: "/constitution" },
         { key: "internalInterests", label: "Internal Interests", path: "/internalinterests" },
@@ -57,12 +59,7 @@ const Index = () => {
     },
     {
       header: "PUBLICATIONS",
-      submenu: [
-        { key: "journals", label: "Journals", path: "/journals" },
-        { key: "articles", label: "Articles", path: "/articles" },
-        { key: "becomeAuthor", label: "Become an Author", path: "/becomeauthor" },
-        { key: "shareResearch", label: "Share Your Research", path: "/shareresearch" },
-      ],
+      path: "/publications"
     },
     {
       header: "NEWSROOM",
@@ -108,14 +105,14 @@ const Index = () => {
 
         {screenSize?.width > 769 ? (
           <div className={style.DiplomaticLogo}>
-            <Link to="/">
+            {/* <Link to="/">
               <Image
                 width={logoWidth}
                 style={{ marginLeft: marginLeft, paddingTop: "20px" }}
                 preview={false}
                 src={DiplomaticLogo}
               />
-            </Link>
+            </Link> */}
           </div>
         ) : (
           <Button
@@ -133,13 +130,19 @@ const Index = () => {
       </div>
       {screenSize?.width > 769 ? (
         <div className={style.NavBar}>
-          {menuItems.map(({ header, submenu }) => (
-            <Dropdown
+          {menuItems.map(({ header, submenu, path }) => (
+            submenu ? (
+              <Dropdown
               key={header}
               overlay={
                 <Menu>
-                  {submenu.map(({ key, label, path }) => (
-                    <Menu.Item key={key} onClick={() => navigate(path)}>
+                  {submenu.map(({ key, label, path, disabled }) => (
+                    <Menu.Item 
+                      key={key} 
+                      onClick={() => !disabled && navigate(path)} 
+                      disabled={disabled} 
+                      style={disabled ? { color: "gray", cursor: "not-allowed" } : {}}
+                    >
                       {label}
                     </Menu.Item>
                   ))}
@@ -151,6 +154,11 @@ const Index = () => {
                 {header}
               </Text>
             </Dropdown>
+            ) : (
+              <Text key={header} className={style.NavBarText} onClick={() => navigate(path)}>
+                {header}
+              </Text>
+            )
           ))}
         </div>
       ) : (

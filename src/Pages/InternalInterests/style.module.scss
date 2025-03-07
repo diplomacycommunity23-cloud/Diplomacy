@@ -1,13 +1,23 @@
 .MainContainer {
+  min-height: 56vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: "#ffffff";
-  padding: 10% 10% 20px 10%;
+  padding: 0% 10% 20px 10%;
   border-top: hsl(0, 0%, 100%) 1px solid;
 }
 
 .MainRow {
+  height: 10vh;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
 }
 
 .MainImageRow {
@@ -47,4 +57,28 @@
     font-size: 1.2em;
     text-align: justify;
   }
+}
+
+.ContentWrapper {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.MainTitle {
+  color: white !important;
+  font-size: 3.5rem !important;
+  margin-bottom: 0 !important;
+  font-weight: normal !important;
+}
+
+.QuoteText {
+  color: #c4c4c4;
+  font-size: 1.5rem;
+  max-width: 800px;
+  line-height: 1.6;
+  font-style: italic;
 }

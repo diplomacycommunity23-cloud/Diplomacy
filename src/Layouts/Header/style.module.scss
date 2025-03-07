@@ -1,7 +1,7 @@
 .Header {
   z-index: 1000;
   width: 100%;
-  background: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 0);
   display: flex;
   justify-content: space-between;
   padding: 10px 9% 10px 5%;
@@ -22,7 +22,7 @@
 }
 
 .Logo {
-  width: 30vmin;
+  width: 13vmin;
   color: white;
   display: flex;
   font-weight: bold;
@@ -71,6 +71,7 @@
   cursor: pointer;
   font-size: 1.1vw;
   color: white;
+  word-spacing: 2px;
 
   @media (max-width: 768px) {
     margin-top: 5vw;

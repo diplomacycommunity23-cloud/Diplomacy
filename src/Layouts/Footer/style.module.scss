@@ -50,6 +50,16 @@
   font-size: 2em;
   font-weight: 600;
   color: white !important;
+  &.centered {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  &.centeredLeft {
+    text-align: center;
+    display: block;
+    width: 70%;
+  }
 }
 
 .FooterRow > .ant-col {

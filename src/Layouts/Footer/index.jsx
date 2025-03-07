@@ -8,7 +8,7 @@ import {
   CopyrightOutlined
 } from "@ant-design/icons";
 import { Layout, Typography, Input, Button, Row, Col } from "antd";
-
+import LinktreeOutlined from "../../Components/LinktreeIcon/index";
 const { TextArea } = Input;
 const { Title, Text } = Typography;
 const { Footer } = Layout;
@@ -18,7 +18,7 @@ const Index = () => {
     <Footer className={style.Footer}>
       <Row gutter={[40, 0]} className={style.FooterRow}>
         <Col xs={24} sm={24} md={12} lg={6}>
-          <Text className={style.FooterTitle}>Contact Secretary-General</Text>
+          <Text className={`${style.FooterTitle} ${style.centered}`}>Contact Secretary General</Text>
           <Input style={{ borderRadius: "0px", margin: "10px 0" }} placeholder="Name Surname" />
           <Input placeholder="Email" style={{ borderRadius: "0px", margin: "10px 0" }} />
           <TextArea
@@ -66,7 +66,7 @@ const Index = () => {
         <Col xs={24} sm={24} md={12} lg={7}>
           <Row>
             <Col span={24}>
-              <Text level={3} className={style.FooterTitle}>
+              <Text level={3} className={`${style.FooterTitle} ${style.centeredLeft}`}>
                 Connect With Us
               </Text>
             </Col>
@@ -155,19 +155,34 @@ const Index = () => {
           </Text>
           <div style={{ display: "flex", gap: "10px" }}>
             <Col style={{ padding: "0px" }} xs={5}>
-              <FacebookOutlined style={{ fontSize: "24px" }} />
+              <a href="https://www.facebook.com/diplomacycommunity" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
+                <FacebookOutlined style={{ fontSize: "24px" }} />
+              </a>
             </Col>
             <Col style={{ padding: "0px" }} xs={5}>
-              <XOutlined style={{ fontSize: "24px" }} />
+              <a href="https://x.com/diplomacycommunity" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
+                <XOutlined style={{ fontSize: "24px" }} />
+              </a>
             </Col>
             <Col style={{ padding: "0px" }} xs={5}>
-              <InstagramOutlined style={{ fontSize: "24px" }} />
+              <a href="https://instagram.com/diplomacycommunity" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
+                <InstagramOutlined style={{ fontSize: "24px" }} />
+              </a>
             </Col>
             <Col style={{ padding: "0px" }} xs={5}>
-              <LinkedinOutlined style={{ fontSize: "24px" }} />
+              <a href="https://www.linkedin.com/company/104675317/admin/dashboard/" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
+                <LinkedinOutlined style={{ fontSize: "24px" }} />
+              </a>
             </Col>
             <Col style={{ padding: "0px" }} xs={5}>
-              <YoutubeOutlined style={{ fontSize: "24px" }} />
+              <a href="https://linktr.ee/diplomacycommunity" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
+                <LinktreeOutlined style={{ fontSize: "24px" }} />
+              </a>
+            </Col>
+            <Col style={{ padding: "0px" }} xs={5}>
+              <a href="https://www.youtube.com/@diplomacycommunity" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
+                <YoutubeOutlined style={{ fontSize: "24px" }} />
+              </a>
             </Col>
           </div>
         </Col>
