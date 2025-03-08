@@ -10,7 +10,7 @@ function App() {
         <div className={style.MainContainer}>
           <Row className={style.MainRow}>
             <div className={style.ContentWrapper}>
-              <Title className={style.MainTitle}>Internal Interest</Title>
+              <Title className={style.MainRowTitle}>Internal Interest</Title>
               <Text className={style.QuoteText}>
                 "We enhance national interests through international diplomacy and support foreign missions within our country."
               </Text>

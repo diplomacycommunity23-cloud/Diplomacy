@@ -71,7 +71,11 @@ const ImageCarousel = ({ open, openDrawer, items }) => {
                   <Menu.Item
                     key={key}
                     onClick={() => {
-                      navigate(path);
+                      if (path.startsWith('http')) {
+                        window.open(path, '_blank');
+                      } else {
+                        navigate(path);
+                      }
                       handleDrawerClose(); 
                     }}
                   >

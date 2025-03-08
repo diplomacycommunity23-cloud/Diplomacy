@@ -2,11 +2,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import style from "./style.module.scss";
-import { images } from "../../Assets/Rotate";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import React, { useState, useEffect } from "react";
 
-const ImageCarousel = () => {
+const ImageCarousel = ({images}) => {
   const [screenSize, setScreenSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -31,15 +30,14 @@ const ImageCarousel = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow:
-      screenSize?.width < 768 ? 1 : screenSize?.width < 1024 ? 2 : screenSize?.width > 1024 ? 3 : 3,
+    slidesToShow: 1,
+      // screenSize?.width < 768 ? 1 : screenSize?.width < 1024 ? 2 : screenSize?.width > 1024 ? 3 : 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
-
   function SampleNextArrow(props) {
     const { onClick } = props;
     return (

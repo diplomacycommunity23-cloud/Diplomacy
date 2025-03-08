@@ -10,7 +10,7 @@ function App() {
         <div className={style.MainContainer}>
           <Row className={style.MainRow}>
             <div className={style.ContentWrapper}>
-              <Title className={style.MainTitle}>International Interest</Title>
+              <Title className={style.MainRowTitle}>International Interest</Title>
               <Text className={style.QuoteText}>
                 "We foster international cooperation and understanding by facilitating dialogue, promoting cultural exchange,
                 and supporting diplomatic initiatives to address global challenges."

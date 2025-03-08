@@ -42,7 +42,7 @@ const Index = () => {
     },
     {
       header: <Text className={style.NavBarText} onClick={(e) => e.preventDefault()}>
-      DIPLOMATIC&nbsp;&nbsp;&nbsp;COMMUNITY
+      DIPLOMACY&nbsp;&nbsp;&nbsp;COMMUNITY
     </Text>,
       submenu: [
         { key: "constitution", label: "Constitution", path: "/constitution" },
@@ -62,12 +62,13 @@ const Index = () => {
       path: "/publications"
     },
     {
-      header: "NEWSROOM",
+      header: "PARTNERSHIP",
       submenu: [
-        { key: "event1", label: "Event 1", path: "/event1" },
-        { key: "event2", label: "Event 2", path: "/event1" },
-        { key: "event3", label: "Event 3", path: "/event1" },
-        { key: "event4", label: "Event 4", path: "/event1" },
+        { key: "member", label: "Become a member", path: "https://docs.google.com/forms/d/e/1FAIpQLSdMorpxHB5QCoPT86rGHbYFgyz4bgYg7sxPM7GC7HRCDP63pA/viewform", external: true },
+        { key: "partner", label: "Become a partner", disabled: true},
+        { key: "organizer", label: "Become a organizer", disabled: true},
+        { key: "mediapartner", label: "Become a media-partner", disabled: true},
+        { key: "volunteer", label: "Become a volunteer", disabled: true},
       ],
     },
   ];
@@ -95,7 +96,7 @@ const Index = () => {
       ],
     },
     {
-      header: "DIPLOMATIC COMMUNITY",
+      header: "DIPLOMACY COMMUNITY",
       submenu: [
         { key: "constitution", label: "Constitution", path: "/constitution" },
         { key: "internalInterests", label: "Internal Interests", path: "/internalinterests" },
@@ -114,14 +115,18 @@ const Index = () => {
       path: "/publications"
     },
     {
-      header: "NEWSROOM",
+      header: "PARTNERSHIP",
       submenu: [
-        { key: "event1", label: "Event 1", path: "/event1" },
-        { key: "event2", label: "Event 2", path: "/event1" },
-        { key: "event3", label: "Event 3", path: "/event1" },
-        { key: "event4", label: "Event 4", path: "/event1" },
+        { key: "partner", label: "Become a partner", path: "https://docs.google.com/forms/d/e/1FAIpQLSdMorpxHB5QCoPT86rGHbYFgyz4bgYg7sxPM7GC7HRCDP63pA/viewform", external: true },
+        { key: "organizer", label: "Become a organizer", path: "https://docs.google.com/forms/d/e/1FAIpQLSdMorpxHB5QCoPT86rGHbYFgyz4bgYg7sxPM7GC7HRCDP63pA/viewform", external: true },
+        { key: "mediapartner", label: "Become a media-partner", path: "https://docs.google.com/forms/d/e/1FAIpQLSdMorpxHB5QCoPT86rGHbYFgyz4bgYg7sxPM7GC7HRCDP63pA/viewform", external: true },
+        { key: "member", label: "Become a member", path: "https://docs.google.com/forms/d/e/1FAIpQLSdMorpxHB5QCoPT86rGHbYFgyz4bgYg7sxPM7GC7HRCDP63pA/viewform", external: true },
+        { key: "volunteer", label: "Become a volunteer", path: "https://docs.google.com/forms/d/e/1FAIpQLSdMorpxHB5QCoPT86rGHbYFgyz4bgYg7sxPM7GC7HRCDP63pA/viewform", external: true },
       ],
     },
+    // bunlara basanda sehife acilmalidi ? yoxsa google forms kimi bir shey ?
+    // okay
+
   ];
 
   const openDrawer = () => {
@@ -143,7 +148,7 @@ const Index = () => {
     };
   }, []);
 
-  const logoWidth = location.pathname === "/" ? "100%" : "80%";
+  const logoWidth = location.pathname === "/" ? "100%" : "100%";
   const marginLeft = logoWidth === "100%" ? "15px" : "-15px";
 
   return (
@@ -188,10 +193,10 @@ const Index = () => {
               key={header}
               overlay={
                 <Menu>
-                  {submenu.map(({ key, label, path, disabled }) => (
+                  {submenu.map(({ key, label, path, disabled, external }) => (
                     <Menu.Item 
                       key={key} 
-                      onClick={() => !disabled && navigate(path)} 
+                      onClick={() => !disabled && (external ? window.open(path, '_blank') : navigate(path))} 
                       disabled={disabled} 
                       style={disabled ? { color: "gray", cursor: "not-allowed" } : {}}
                     >

@@ -18,7 +18,7 @@ const Index = () => {
     <Footer className={style.Footer}>
       <Row gutter={[40, 0]} className={style.FooterRow}>
         <Col xs={24} sm={24} md={12} lg={6}>
-          <Text className={`${style.FooterTitle} ${style.centered}`}>Contact Secretary General</Text>
+          <Text className={`${style.FooterTitle} ${style.centered}`}>Contact Secretary-General</Text>
           <Input style={{ borderRadius: "0px", margin: "10px 0" }} placeholder="Name Surname" />
           <Input placeholder="Email" style={{ borderRadius: "0px", margin: "10px 0" }} />
           <TextArea
@@ -55,13 +55,10 @@ const Index = () => {
             <Text className={style.FooterText}>(+994 50) 460 02 11</Text>
           </Row>
           <Row>
-            <Text className={style.FooterText}>diplomacycommunity.org</Text>
+            <a href="https://diplomacycommunity.org" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
+              <Text className={style.FooterText}>diplomacycommunity.org</Text>
+            </a>
           </Row>
-          {/* <Row>
-            <Text className={style.FooterText}>
-              Ahmad Aghaoghlu str. 61, Baku, Azerbaijan, AZ1008
-            </Text>
-          </Row> */}
         </Col>
         <Col xs={24} sm={24} md={12} lg={7}>
           <Row>
@@ -188,7 +185,7 @@ const Index = () => {
         </Col>
       </Row>
       <Row>
-        <CopyrightOutlined style={{paddingTop:"10px", marginRight:"10px"}}/>
+        <CopyrightOutlined style={{ paddingTop: "10px", marginRight: "10px" }} />
         <Text className={style.FooterText}>2025 All rights reserved.</Text>
       </Row>
     </Footer>
