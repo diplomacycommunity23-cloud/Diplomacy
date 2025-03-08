@@ -55,7 +55,7 @@
 }
 
 .NavBar {
-  width: 95vmin;
+  width: 120vmin;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,7 +73,7 @@
   font-size: 1.1vw;
   color: white;
   word-spacing: 2px;
-
+  
   @media (max-width: 768px) {
     margin-top: 5vw;
     font-size: 4vw;

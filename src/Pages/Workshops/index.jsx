@@ -1,64 +1,60 @@
-import { Layout, Typography, Row, Col } from "antd";
+import { Layout, Typography, Row, Col, Image } from "antd";
 const { Content } = Layout;
 const { Text } = Typography;
 import style from "./style.module.scss";
+import { images4 } from "../../Assets/diplomacyCollection4";
+import { ImageCarousel } from "../../Components";
 
 function App() {
   return (
-    <Layout className="layout" style={{ backgroundColor: "#0d1429"}}>
+    <Layout className="layout" style={{ backgroundColor: "#0d1429" }}>
       <Content>
         <div className={style.MainContainer}>
           <Row className={style.MainRow}>
-            <Col xs={24} sm={24} md={12} lg={11}>
+            <Col xs={24} sm={24} md={12} lg={21}>
               <Row>
-                <Text className={style.MainRowTitle}>Who We Are</Text>
+              <Text className={style.MainTitleText}>
+              Diplomacy Community Represented at ADA University
+                </Text>
+                <Text className={style.MainTimeText}>
+                  23/10/2024
+                </Text>
               </Row>
               <Row>
                 <Text className={style.MainRowText}>
-                  The Diplomacy Community is a non-governmental organization (NGO) dedicated to
-                  fostering international cooperation, dialogue, and cultural exchange. Based in
-                  Azerbaijan, the organization collaborates with diplomats, international
-                  institutions, and policymakers to address global challenges and promote mutual
-                  understanding among nations. We work at the crossroads of diplomacy and
-                  international relations, serving as a hub for meaningful conversations and
-                  actionable initiatives.
+                  We are proud to have officially presented the Diplomacy Community Stand at ADA University, marking a significant step in our mission to engage with aspiring diplomats, professionals, and students passionate about global affairs.
+                </Text>
+                <Text className={style.MainRowText}>
+                  The day was filled with insightful discussions on international relations, diplomacy, and the role of cross-cultural collaboration in shaping today’s interconnected world. Our stand became a dynamic space where students and future diplomats explored opportunities within the Diplomacy Community, gaining valuable insights into the impact of diplomacy in international cooperation, conflict resolution, and policy-making.
+                </Text>
+                <Text className={style.MainRowText}>
+                  Through meaningful conversations and shared experiences, we reaffirmed our commitment to fostering dialogue, understanding, and collaboration on a global scale. We are grateful to everyone who stopped by, expressed interest, and joined us in our mission to promote diplomacy as a driving force for peace and development.
+                </Text>
+                <Text className={style.MainRowText}>
+                  This is just the beginning! Stay tuned for upcoming events, workshops, and exclusive opportunities to be part of an active and influential diplomatic network. Together, we continue to shape the future of diplomacy.
+                </Text>
+                <Text className={style.MainRowText}>
+                  Diplomacy Starts Here!
+                </Text>
+                <Text className={style.MainRowText}>
+                  #DiplomacyCommunity #OathToConfidentiality #GlobalEngagement
+                </Text>
+                <Text className={style.MainItalicFont}>
+                  Diplomacy in
+                </Text>
+                <Text className={style.MainItalicFont}>
+                  Dynamics,
+                </Text>
+                <Text className={style.MainItalicFont}>
+                  Dialogue for
+                </Text>
+                <Text className={style.MainItalicFont}>
+                  Development.
                 </Text>
               </Row>
             </Col>
-          </Row>
-          {/* <Row className={style.MainImageRow}>
-            <Image preview={false} src={DiplomacyLogo} />
-          </Row> */}
-          <Row className={style.MainRow}>
-            <Col xs={24} sm={24} md={12} lg={11}>
-              <Row>
-                <Text className={style.MainRowTitle}>Our Story</Text>
-              </Row>
-              <Row>
-                <Text className={style.MainRowText}>
-                  The Diplomacy Community was established in 2020 at ADA University to contribute to
-                  global diplomacy through impactful events, collaborations, and policy discussions.
-                  Since its inception, the organization has built strong relationships with
-                  ambassadors, politicians, international organizations, and influential leaders,
-                  driving projects that prioritize dialogue and constructive solutions to the
-                  pressing challenges of our times.
-                </Text>
-              </Row>
-            </Col>
-            <Col xs={24} sm={24} md={12} lg={11}>
-              <Row>
-                <Text className={style.MainRowTitle}>Our Mission</Text>
-              </Row>
-              <Row>
-                <Text className={style.MainRowText}>
-                  Our mission is to advance international diplomacy by providing a platform for
-                  dialogue, collaboration, and cultural understanding. We are committed to bridging
-                  gaps between cultures and fostering partnerships that promote peace, prosperity,
-                  and sustainable development in a rapidly changing world. The Diplomacy Community
-                  stands as a platform where future diplomats and policymakers develop the skills
-                  and connections to address the complexities of our globalized world.
-                </Text>
-              </Row>
+            <Col xs={24} sm={24} md={20} lg={16}>
+              <ImageCarousel images={images4} />
             </Col>
           </Row>
         </div>

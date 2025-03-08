@@ -9,14 +9,16 @@ import {
 } from "@ant-design/icons";
 import { Layout, Typography, Input, Button, Row, Col } from "antd";
 import LinktreeOutlined from "../../Components/LinktreeIcon/index";
+import { useLocation } from "react-router-dom";
 const { TextArea } = Input;
 const { Title, Text } = Typography;
 const { Footer } = Layout;
 
 const Index = () => {
+  const location = useLocation();
   return (
-    <Footer className={style.Footer}>
-      <Row gutter={[40, 0]} className={style.FooterRow}>
+    <Footer className={style.Footer} style={{ background: location.pathname === "/structure" || "/stakeholders" ? "#09122f" : "#0d1429" }}>
+      <Row gutter={[40, 0]}  style={{ background: location.pathname === "/structure" || "/stakeholders"  ? "#09122f" : "#0d1429" }} className={style.FooterRow}>
         <Col xs={24} sm={24} md={12} lg={6}>
           <Text className={`${style.FooterTitle} ${style.centered}`}>Contact Secretary-General</Text>
           <Input style={{ borderRadius: "0px", margin: "10px 0" }} placeholder="Name Surname" />

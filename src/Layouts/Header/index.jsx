@@ -32,17 +32,17 @@ const Index = () => {
     {
       header: "ACTIVITIES",
       submenu: [
-        { key: "highLevelMeetings", label: "High Level Meetings", path: "/highlevelmeetings" },
-        { key: "debateSessions", label: "Debate Sessions", path: "/debatesessions" },
+        { key: "secretariatMeetings", label: "Secretariat Meetings", path: "/secretariatmeetings"  },
+        { key: "officialVisits", label: "Official Visits", path: "/officialvisits" },
         { key: "workshops", label: "Workshops and Seminars", path: "/workshops" },
+        { key: "highLevelMeetings", label: "High Level Meetings", disabled: true},
         { key: "networkingEvents", label: "Networking Events", disabled: true },
         { key: "diplomatMeetings", label: "Diplomat Meetings", disabled: true },
-        { key: "culturalExchange", label: "Cultural Exchange Programs", disabled: true },
       ],
     },
     {
-      header: <Text className={style.NavBarText} onClick={(e) => e.preventDefault()}>
-      DIPLOMACY&nbsp;&nbsp;&nbsp;COMMUNITY
+      header: <Text style={{fontWeight: "700"}} className={style.NavBarText} onClick={(e) => e.preventDefault()}>
+      DIPLOMACY&nbsp;&nbsp;COMMUNITY
     </Text>,
       submenu: [
         { key: "constitution", label: "Constitution", path: "/constitution" },
@@ -66,7 +66,7 @@ const Index = () => {
       submenu: [
         { key: "member", label: "Become a member", path: "https://docs.google.com/forms/d/e/1FAIpQLSdMorpxHB5QCoPT86rGHbYFgyz4bgYg7sxPM7GC7HRCDP63pA/viewform", external: true },
         { key: "partner", label: "Become a partner", disabled: true},
-        { key: "organizer", label: "Become a organizer", disabled: true},
+        { key: "organizer", label: "Become a young leader", disabled: true},
         { key: "mediapartner", label: "Become a media-partner", disabled: true},
         { key: "volunteer", label: "Become a volunteer", disabled: true},
       ],
@@ -87,16 +87,16 @@ const Index = () => {
     {
       header: "ACTIVITIES",
       submenu: [
-        { key: "highLevelMeetings", label: "High Level Meetings", path: "/highlevelmeetings" },
-        { key: "debateSessions", label: "Debate Sessions", path: "/debatesessions" },
+        { key: "secretariatMeetings", label: "Secretariat Meetings", path: "/secretariatmeetings"  },
+        { key: "officialVisits", label: "Official Visits", path: "/officialvisits" },
         { key: "workshops", label: "Workshops and Seminars", path: "/workshops" },
+        { key: "highLevelMeetings", label: "High Level Meetings", disabled: true},
         { key: "networkingEvents", label: "Networking Events", disabled: true },
         { key: "diplomatMeetings", label: "Diplomat Meetings", disabled: true },
-        { key: "culturalExchange", label: "Cultural Exchange Programs", disabled: true },
       ],
     },
     {
-      header: "DIPLOMACY COMMUNITY",
+      header:"DIPLOMACY COMMUNITY",
       submenu: [
         { key: "constitution", label: "Constitution", path: "/constitution" },
         { key: "internalInterests", label: "Internal Interests", path: "/internalinterests" },
@@ -117,17 +117,70 @@ const Index = () => {
     {
       header: "PARTNERSHIP",
       submenu: [
-        { key: "partner", label: "Become a partner", path: "https://docs.google.com/forms/d/e/1FAIpQLSdMorpxHB5QCoPT86rGHbYFgyz4bgYg7sxPM7GC7HRCDP63pA/viewform", external: true },
-        { key: "organizer", label: "Become a organizer", path: "https://docs.google.com/forms/d/e/1FAIpQLSdMorpxHB5QCoPT86rGHbYFgyz4bgYg7sxPM7GC7HRCDP63pA/viewform", external: true },
-        { key: "mediapartner", label: "Become a media-partner", path: "https://docs.google.com/forms/d/e/1FAIpQLSdMorpxHB5QCoPT86rGHbYFgyz4bgYg7sxPM7GC7HRCDP63pA/viewform", external: true },
         { key: "member", label: "Become a member", path: "https://docs.google.com/forms/d/e/1FAIpQLSdMorpxHB5QCoPT86rGHbYFgyz4bgYg7sxPM7GC7HRCDP63pA/viewform", external: true },
-        { key: "volunteer", label: "Become a volunteer", path: "https://docs.google.com/forms/d/e/1FAIpQLSdMorpxHB5QCoPT86rGHbYFgyz4bgYg7sxPM7GC7HRCDP63pA/viewform", external: true },
+        { key: "partner", label: "Become a partner", disabled: true},
+        { key: "organizer", label: "Become a young leader", disabled: true},
+        { key: "mediapartner", label: "Become a media-partner", disabled: true},
+        { key: "volunteer", label: "Become a volunteer", disabled: true},
       ],
     },
-    // bunlara basanda sehife acilmalidi ? yoxsa google forms kimi bir shey ?
-    // okay
-
   ];
+
+  // const menuDrawerItems = [
+  //   {
+  //     header: "ABOUT US",
+  //     submenu: [
+  //       { key: "whoWeAre", label: "Who We Are", path: "/whoweare" },
+  //       { key: "ourStory", label: "Our Story", path: "/ourstory" },
+  //       { key: "ourMission", label: "Our Mission", path: "/ourmission" },
+  //       { key: "secretaryGeneral", label: "About Secretary-General", path: "/secretarygeneral" },
+  //       { key: "dcAward", label: "DC Award", path: "/dcaward" },
+  //     ],
+  //   },
+  //   {
+  //     header: "ACTIVITIES",
+  //     submenu: [
+  //       { key: "secretariatMeetings", label: "Secretariat Meetings", path: "/officialvisits"  },
+  //       { key: "officialVisits", label: "Official Visits", path: "/officialvisits" },
+  //       { key: "workshops", label: "Workshops and Seminars", path: "/workshops" },
+  //       { key: "highLevelMeetings", label: "High Level Meetings", disabled: true},
+  //       { key: "networkingEvents", label: "Networking Events", disabled: true },
+  //       { key: "diplomatMeetings", label: "Diplomat Meetings", disabled: true },
+  //     ],
+  //   },
+  //   {
+  //     header: "DIPLOMACY COMMUNITY",
+  //     submenu: [
+  //       { key: "constitution", label: "Constitution", path: "/constitution" },
+  //       { key: "internalInterests", label: "Internal Interests", path: "/internalinterests" },
+  //       {
+  //         key: "internationalInterests",
+  //         label: "International Interests",
+  //         path: "/internationalinterests",
+  //       },
+  //       { key: "structure", label: "Structure", path: "/structure" },
+  //       { key: "stakeholders", label: "Our Stakeholders", path: "/stakeholders" },
+  //       { key: "youngLeaders", label: "Young Leaders Platform", path: "/youngleaders" },
+  //     ],
+  //   },
+  //   {
+  //     header: "PUBLICATIONS",
+  //     path: "/publications"
+  //   },
+  //   {
+  //     header: "PARTNERSHIP",
+  //     submenu: [
+  //       { key: "partner", label: "Become a partner", path: "https://docs.google.com/forms/d/e/1FAIpQLSdMorpxHB5QCoPT86rGHbYFgyz4bgYg7sxPM7GC7HRCDP63pA/viewform", external: true },
+  //       { key: "organizer", label: "Become a organizer", path: "https://docs.google.com/forms/d/e/1FAIpQLSdMorpxHB5QCoPT86rGHbYFgyz4bgYg7sxPM7GC7HRCDP63pA/viewform", external: true },
+  //       { key: "mediapartner", label: "Become a media-partner", path: "https://docs.google.com/forms/d/e/1FAIpQLSdMorpxHB5QCoPT86rGHbYFgyz4bgYg7sxPM7GC7HRCDP63pA/viewform", external: true },
+  //       { key: "member", label: "Become a member", path: "https://docs.google.com/forms/d/e/1FAIpQLSdMorpxHB5QCoPT86rGHbYFgyz4bgYg7sxPM7GC7HRCDP63pA/viewform", external: true },
+  //       { key: "volunteer", label: "Become a volunteer", path: "https://docs.google.com/forms/d/e/1FAIpQLSdMorpxHB5QCoPT86rGHbYFgyz4bgYg7sxPM7GC7HRCDP63pA/viewform", external: true },
+  //     ],
+  //   },
+  //   // bunlara basanda sehife acilmalidi ? yoxsa google forms kimi bir shey ?
+  //   // okay
+
+  // ];
 
   const openDrawer = () => {
     setDrawerVisible(!drawerVisible);

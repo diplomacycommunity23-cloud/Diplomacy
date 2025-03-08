@@ -9,7 +9,6 @@ const OurStory = lazy(() => import("../Pages/OurStory"));
 const OurMission = lazy(() => import("../Pages/OurMission"));
 const SecretaryGeneral = lazy(() => import("../Pages/SecretaryGeneral"));
 const DcAward = lazy(() => import("../Pages/DcAward"));
-const HighLevelMeetings = lazy(() => import("../Pages/HighLevelMeetings"));
 const DiplomatMeetings = lazy(() => import("../Pages/DiplomatMeetings"));
 const DebateSessions = lazy(() => import("../Pages/DebateSessions"));
 const Workshops = lazy(() => import("../Pages/Workshops"));
@@ -26,6 +25,9 @@ const Articles = lazy(() => import("../Pages/Articles"));
 const BecomeAuthor = lazy(() => import("../Pages/BecomeAuthor"));
 const ShareResearch = lazy(() => import("../Pages/ShareResearch"));
 
+const OfficialVisits = lazy(() => import("../Pages/OfficialVisits"));
+const SecretariatMeetings = lazy(() => import("../Pages/SecretariatMeetings"));
+
 const Index = () => {
   return (
     <BrowserRouter>
@@ -40,7 +42,8 @@ const Index = () => {
             <Route path="secretarygeneral" element={<SecretaryGeneral />} />
             <Route path="dcaward" element={<DcAward />} />
             {/* Activities Routes */}
-            <Route path="highlevelmeetings" element={<HighLevelMeetings />} />
+            <Route path="officialvisits" element={<OfficialVisits />} />
+            <Route path="secretariatmeetings" element={<SecretariatMeetings />} />
             <Route path="diplomatmeetings" element={<DiplomatMeetings />} />
             <Route path="debatesessions" element={<DebateSessions />} />
             <Route path="workshops" element={<Workshops />} />
@@ -58,6 +61,8 @@ const Index = () => {
             <Route path="articles" element={<Articles />} />
             <Route path="becomeauthor" element={<BecomeAuthor />} />
             <Route path="shareresearch" element={<ShareResearch />} />
+
+
           </Route>
         </Routes>
       </Suspense>

@@ -23,7 +23,7 @@ function App() {
             </Col>
           </Row>
           <Row className={style.MainRow}>
-            <Col xs={24} sm={24} md={8} lg={8}>
+            <Col xs={24} sm={24} md={11} lg={11}>
               <Row>
                 <Text className={style.MainRowSmallTitle}>Objectives</Text>
               </Row>
@@ -53,7 +53,7 @@ function App() {
                 </Text>
               </Row>
             </Col>
-            <Col xs={24} sm={24} md={8} lg={8}>
+            <Col xs={24} sm={24} md={9} lg={9}>
               <Row>
                 <Text className={style.MainRowSmallTitle}>Activities</Text>
               </Row>
@@ -83,7 +83,7 @@ function App() {
                 </Text>
               </Row>
             </Col>
-            <Col xs={24} sm={24} md={8} lg={8}>
+            <Col xs={24} sm={24} md={4} lg={4}>
               <Row>
                 <Text className={style.MainRowSmallTitle}>Benefits</Text>
               </Row>

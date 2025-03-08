@@ -14,7 +14,7 @@
   display: flex;
   color: #ffffff !important;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   text-align: justify;
   width: 100%;
   font-size: 3em;
@@ -35,9 +35,36 @@
   text-align: justify;
   width: 100%;
   font-size: 1.5em;
+  line-height: 200%;
   font-weight: 500;
+  line-height: 200%;
   @media (max-width: 768px) {
     font-size: 1.2em;
     text-align: justify;
+  }
+}
+
+:global {
+  .ant-collapse {
+    .ant-collapse-item {
+      border-bottom: none !important;
+      
+      .ant-collapse-header {
+        padding: 0 !important;
+        
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      
+      .ant-collapse-content {
+        background: transparent;
+        color: white;
+        
+        .ant-collapse-content-box {
+          padding: 16px 0;
+        }
+      }
+    }
   }
 }
