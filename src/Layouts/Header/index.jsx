@@ -45,7 +45,7 @@ const Index = () => {
       DIPLOMACY&nbsp;&nbsp;COMMUNITY
     </Text>,
       submenu: [
-        { key: "constitution", label: "Constitution", path: "/constitution" },
+        { key: "constitution", label: "Constitution", path: "https://s3.diplomacycommunity.org/constitution.pdf", external: true  },
         { key: "internalInterests", label: "Internal Interests", path: "/internalinterests" },
         {
           key: "internationalInterests",
@@ -99,7 +99,7 @@ const Index = () => {
     {
       header:"DIPLOMACY COMMUNITY",
       submenu: [
-        { key: "constitution", label: "Constitution", path: "/constitution" },
+        { key: "constitution", label: "Constitution", path: "https://s3.diplomacycommunity.org/constitution.pdf", external: true  },
         { key: "internalInterests", label: "Internal Interests", path: "/internalinterests" },
         {
           key: "internationalInterests",
