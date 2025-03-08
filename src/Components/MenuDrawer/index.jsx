@@ -53,7 +53,7 @@ const ImageCarousel = ({ open, openDrawer, items }) => {
           <Panel
           header={
             <Text className={style.MenuText}>
-                {header.charAt(0).toUpperCase() + header.slice(1).toLowerCase()}
+                {header.charAt(0).toUpperCase() + header.slice(1).toUpperCase()}
               </Text>
             }
             expandIcon={({ isActive }) =>
