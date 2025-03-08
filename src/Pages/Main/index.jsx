@@ -2,6 +2,7 @@ import { Layout, Typography, Row, Col } from "antd";
 import { ImageCarousel } from "../../Components";
 import { images1 } from "../../Assets/diplomacyCollection1";
 import { images2 } from "../../Assets/diplomacyCollection2";
+import { images4 } from "../../Assets/diplomacyCollection4";
 
 const { Content } = Layout;
 const { Text } = Typography;
@@ -43,7 +44,7 @@ function App() {
               <ImageCarousel images={images2} />
             </Col>
             <Col xs={24} sm={24} md={12} lg={8}>
-              <ImageCarousel images={images2} />
+              <ImageCarousel images={images4} />
             </Col>
           </Row>
         </div>
