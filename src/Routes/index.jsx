@@ -45,7 +45,6 @@ const Index = () => {
             <Route path="officialvisits" element={<OfficialVisits />} />
             <Route path="secretariatmeetings" element={<SecretariatMeetings />} />
             <Route path="diplomatmeetings" element={<DiplomatMeetings />} />
-            <Route path="debatesessions" element={<DebateSessions />} />
             <Route path="workshops" element={<Workshops />} />
             <Route path="networkingevents" element={<NetworkingEvents />} />
             <Route path="culturalexchange" element={<CulturalExchange />} />

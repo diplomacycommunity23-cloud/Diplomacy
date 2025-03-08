@@ -51,6 +51,8 @@
 
   @media (max-width: 768px) {
     font-size: 1.2em;
+    width: 100%;
+
     text-align: justify;
   }
 }
@@ -68,6 +70,7 @@
   line-height: 200%;
   text-indent: 2em;
   @media (max-width: 768px) {
+    width: 100%;
     font-size: 1.2em;
     text-align: justify;
   }

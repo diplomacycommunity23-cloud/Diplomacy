@@ -18,29 +18,31 @@ const Index = () => {
   const location = useLocation();
   return (
     <Footer className={style.Footer} style={{ background: location.pathname === "/structure" || "/stakeholders" ? "#09122f" : "#0d1429" }}>
-      <Row gutter={[40, 0]}  style={{ background: location.pathname === "/structure" || "/stakeholders"  ? "#09122f" : "#0d1429" }} className={style.FooterRow}>
-        <Col xs={24} sm={24} md={12} lg={6}>
-          <Text className={`${style.FooterTitle} ${style.centered}`}>Contact Secretary-General</Text>
-          <Input style={{ borderRadius: "0px", margin: "10px 0" }} placeholder="Name Surname" />
-          <Input placeholder="Email" style={{ borderRadius: "0px", margin: "10px 0" }} />
-          <TextArea
-            style={{ borderRadius: "0px", margin: "10px 0" }}
-            rows={3}
-            placeholder="Your Message"
-          />
-          <Button
-            style={{
-              backgroundColor: "Black",
-              color: "white",
-              border: "none",
-              borderRadius: "0px",
-              width: "100%",
-              marginTop: "10px",
-            }}
-          >
-            Send
-          </Button>
-        </Col>
+      <Row gutter={[40, 0]} style={{ background: location.pathname === "/structure" || "/stakeholders" ? "#09122f" : "#0d1429" }} className={style.FooterRow}>
+        {location.pathname === "/" &&
+          <Col xs={24} sm={24} md={12} lg={6}>
+            <Text className={`${style.FooterTitle} ${style.centered}`}>Contact Secretary-General</Text>
+            <Input style={{ borderRadius: "0px", margin: "10px 0" }} placeholder="Name Surname" />
+            <Input placeholder="Email" style={{ borderRadius: "0px", margin: "10px 0" }} />
+            <TextArea
+              style={{ borderRadius: "0px", margin: "10px 0" }}
+              rows={3}
+              placeholder="Your Message"
+            />
+            <Button
+              style={{
+                backgroundColor: "Black",
+                color: "white",
+                border: "none",
+                borderRadius: "0px",
+                width: "100%",
+                marginTop: "10px",
+              }}
+            >
+              Send
+            </Button>
+          </Col>
+        }
         <Col xs={24} sm={24} md={12} lg={5}>
           <Row>
             <Text level={3} className={style.FooterTitle}>
