@@ -24,7 +24,7 @@ function App() {
           <div className={style.DiplomacyVideoMainContainer}>
             <div className={style.DiplomacyVideoContainer}>
               <Row>
-                <Text className={style.DiplomacyVideoTitle}>Diplomatic Community</Text>
+                <Text className={style.DiplomacyVideoTitle}>Diplomacy Community</Text>
               </Row>
               <Row>
                 <Text className={style.DiplomacyVideoText}>
