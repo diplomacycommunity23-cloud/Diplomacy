@@ -54,11 +54,17 @@
     text-align: center;
     display: block;
     width: 100%;
+    @media (max-width: 768px) {
+      text-align: left;
+    }
   }
   &.centeredLeft {
     text-align: center;
     display: block;
     width: 70%;
+    @media (max-width: 768px) {
+      text-align: left;
+    }
   }
 }
 

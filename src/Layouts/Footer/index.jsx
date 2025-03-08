@@ -154,32 +154,32 @@ const Index = () => {
             Follow Us
           </Text>
           <div style={{ display: "flex", gap: "10px" }}>
-            <Col style={{ padding: "0px" }} xs={5}>
+            <Col style={{ padding: "0px" }} xs={4}>
               <a href="https://www.facebook.com/diplomacycommunity" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
                 <FacebookOutlined style={{ fontSize: "24px" }} />
               </a>
             </Col>
-            <Col style={{ padding: "0px" }} xs={5}>
+            <Col style={{ padding: "0px" }} xs={4}>
               <a href="https://x.com/diplomacycommunity" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
                 <XOutlined style={{ fontSize: "24px" }} />
               </a>
             </Col>
-            <Col style={{ padding: "0px" }} xs={5}>
+            <Col style={{ padding: "0px" }} xs={4}>
               <a href="https://instagram.com/diplomacycommunity" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
                 <InstagramOutlined style={{ fontSize: "24px" }} />
               </a>
             </Col>
-            <Col style={{ padding: "0px" }} xs={5}>
+            <Col style={{ padding: "0px" }} xs={4}>
               <a href="https://www.linkedin.com/company/104675317/admin/dashboard/" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
                 <LinkedinOutlined style={{ fontSize: "24px" }} />
               </a>
             </Col>
-            <Col style={{ padding: "0px" }} xs={5}>
+            <Col style={{ padding: "0px" }} xs={4}>
               <a href="https://linktr.ee/diplomacycommunity" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
                 <LinktreeOutlined style={{ fontSize: "24px" }} />
               </a>
             </Col>
-            <Col style={{ padding: "0px" }} xs={5}>
+            <Col style={{ padding: "0px" }} xs={4}>
               <a href="https://www.youtube.com/@diplomacycommunity" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
                 <YoutubeOutlined style={{ fontSize: "24px" }} />
               </a>
@@ -189,7 +189,7 @@ const Index = () => {
       </Row>
       <Row>
         <CopyrightOutlined style={{paddingTop:"10px", marginRight:"10px"}}/>
-        <Text className={style.FooterText}>All rights reserved.</Text>
+        <Text className={style.FooterText}>2025 All rights reserved.</Text>
       </Row>
     </Footer>
   );

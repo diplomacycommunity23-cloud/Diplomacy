@@ -10,22 +10,33 @@
   justify-content: space-around;
 }
 
-.MainImageRow {
-  margin: 40px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
 
 .MainRowTitle {
   display: flex;
   color: #ffffff !important;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: justify;
   width: 100%;
   font-size: 3em;
   font-weight: 800;
+  margin: 5% 0px 1% 0px;
+  @media (max-width: 768px) {
+    font-size: 2em;
+    margin: 13% 0px 1% 0px;
+    border-bottom: #ffffff solid 0.5px;
+  }
+}
+
+.MainRowSmallTitle{
+  display: flex;
+  color: #ffffff !important;
+  align-items: center;
+  justify-content: left;
+  text-align: justify;
+  width: 100%;
+  font-size: 2em;
+  font-weight: 700;
   margin: 5% 0px 1% 0px;
   @media (max-width: 768px) {
     font-size: 2em;
@@ -38,11 +49,11 @@
   display: flex;
   color: #ffffff;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: left;
+  text-align: justify;
   width: 100%;
   font-size: 1.5em;
-  font-weight: 500;
+  font-weight: 400;
   @media (max-width: 768px) {
     font-size: 1.2em;
     text-align: justify;

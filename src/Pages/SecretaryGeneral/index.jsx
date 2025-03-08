@@ -1,62 +1,51 @@
-import { Layout, Typography, Row, Col } from "antd";
+import { Layout, Typography, Row, Col, Image } from "antd";
 const { Content } = Layout;
 const { Text } = Typography;
 import style from "./style.module.scss";
+import SecretaryGeneral from "../../Assets/Logo/SecretaryGeneral.jpg";
 
 function App() {
   return (
-    <Layout className="layout" style={{ backgroundColor: "#0d1429"}}>
+    <Layout className="layout" style={{ backgroundColor: "#0d1429" }}>
       <Content>
         <div className={style.MainContainer}>
+
           <Row className={style.MainRow}>
-            <Col xs={24} sm={24} md={12} lg={11}>
-              <Row>
-                <Text className={style.MainRowTitle}>Who We Are</Text>
-              </Row>
+            <Col xs={24} sm={24} md={12} lg={7} className={style.MainImageRow}>
+              <Image src={SecretaryGeneral} style={{borderRadius:"50%"}}/>
+            </Col>
+            <Col xs={24} sm={24} md={12} lg={7}>
               <Row>
                 <Text className={style.MainRowText}>
-                  The Diplomacy Community is a non-governmental organization (NGO) dedicated to
-                  fostering international cooperation, dialogue, and cultural exchange. Based in
-                  Azerbaijan, the organization collaborates with diplomats, international
-                  institutions, and policymakers to address global challenges and promote mutual
-                  understanding among nations. We work at the crossroads of diplomacy and
-                  international relations, serving as a hub for meaningful conversations and
-                  actionable initiatives.
+                  Huseyn Abdullayev, a founding Secretary-General of the Diplomacy Community, 
+                  established the Diplomacy Community in 2020. 
+                  The Secretary-General of the Diplomacy Community serves as the primary leader and representative of the 
+                  organization and is responsible for ensuring the effective execution of its mission and vision. 
+                  This role embodies the values of diplomacy, leadership, and collaboration, serving as a 
+                  bridge between the organization’s members and external stakeholders, such as embassies, 
+                  international organizations, and government bodies.
+                  As the Secretary-General, Huseyn Abdullayev oversees the strategic direction of the community, 
+                  guiding initiatives that foster international cooperation, cultural exchange, and global understanding. 
+                  He acts as a driving force behind the planning and execution of events, seminars, 
+                  and projects that align with the community’s goals of promoting diplomacy and supporting 
+                  the professional development of Diplomacy Community’s members.
+
                 </Text>
               </Row>
             </Col>
-          </Row>
-          {/* <Row className={style.MainImageRow}>
-            <Image preview={false} src={DiplomacyLogo} />
-          </Row> */}
-          <Row className={style.MainRow}>
-            <Col xs={24} sm={24} md={12} lg={11}>
-              <Row>
-                <Text className={style.MainRowTitle}>Our Story</Text>
-              </Row>
+            <Col xs={24} sm={24} md={12} lg={7}>
               <Row>
                 <Text className={style.MainRowText}>
-                  The Diplomacy Community was established in 2020 at ADA University to contribute to
-                  global diplomacy through impactful events, collaborations, and policy discussions.
-                  Since its inception, the organization has built strong relationships with
-                  ambassadors, politicians, international organizations, and influential leaders,
-                  driving projects that prioritize dialogue and constructive solutions to the
-                  pressing challenges of our times.
-                </Text>
-              </Row>
-            </Col>
-            <Col xs={24} sm={24} md={12} lg={11}>
-              <Row>
-                <Text className={style.MainRowTitle}>Our Mission</Text>
-              </Row>
-              <Row>
-                <Text className={style.MainRowText}>
-                  Our mission is to advance international diplomacy by providing a platform for
-                  dialogue, collaboration, and cultural understanding. We are committed to bridging
-                  gaps between cultures and fostering partnerships that promote peace, prosperity,
-                  and sustainable development in a rapidly changing world. The Diplomacy Community
-                  stands as a platform where future diplomats and policymakers develop the skills
-                  and connections to address the complexities of our globalized world.
+                  Additionally, the Secretary-General ensures that the activities of the Diplomacy Community 
+                  adhere to its constitution and guiding principles, including fostering friendship, 
+                  cooperation, and peacebuilding. By working closely with both the leadership 
+                  team and external partners, the Secretary-General contributes to the growth 
+                  of the community and the effective representation of Azerbaijan’s national interests on the global stage.
+                  This role is pivotal in empowering members, enhancing their understanding of international relations, 
+                  and creating meaningful opportunities for engagement with the broader world. Through visionary 
+                  leadership and unwavering commitment, the Secretary-General ensures the Diplomacy Community remains
+                   a prominent and impactful organization.
+
                 </Text>
               </Row>
             </Col>

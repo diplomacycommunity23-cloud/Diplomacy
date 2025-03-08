@@ -72,6 +72,58 @@ const Index = () => {
     },
   ];
 
+  const menuDrawerItems = [
+    {
+      header: "ABOUT US",
+      submenu: [
+        { key: "whoWeAre", label: "Who We Are", path: "/whoweare" },
+        { key: "ourStory", label: "Our Story", path: "/ourstory" },
+        { key: "ourMission", label: "Our Mission", path: "/ourmission" },
+        { key: "secretaryGeneral", label: "About Secretary-General", path: "/secretarygeneral" },
+        { key: "dcAward", label: "DC Award", path: "/dcaward" },
+      ],
+    },
+    {
+      header: "ACTIVITIES",
+      submenu: [
+        { key: "highLevelMeetings", label: "High Level Meetings", path: "/highlevelmeetings" },
+        { key: "debateSessions", label: "Debate Sessions", path: "/debatesessions" },
+        { key: "workshops", label: "Workshops and Seminars", path: "/workshops" },
+        { key: "networkingEvents", label: "Networking Events", disabled: true },
+        { key: "diplomatMeetings", label: "Diplomat Meetings", disabled: true },
+        { key: "culturalExchange", label: "Cultural Exchange Programs", disabled: true },
+      ],
+    },
+    {
+      header: "DIPLOMATIC COMMUNITY",
+      submenu: [
+        { key: "constitution", label: "Constitution", path: "/constitution" },
+        { key: "internalInterests", label: "Internal Interests", path: "/internalinterests" },
+        {
+          key: "internationalInterests",
+          label: "International Interests",
+          path: "/internationalinterests",
+        },
+        { key: "structure", label: "Structure", path: "/structure" },
+        { key: "stakeholders", label: "Our Stakeholders", path: "/stakeholders" },
+        { key: "youngLeaders", label: "Young Leaders Platform", path: "/youngleaders" },
+      ],
+    },
+    {
+      header: "PUBLICATIONS",
+      path: "/publications"
+    },
+    {
+      header: "NEWSROOM",
+      submenu: [
+        { key: "event1", label: "Event 1", path: "/event1" },
+        { key: "event2", label: "Event 2", path: "/event1" },
+        { key: "event3", label: "Event 3", path: "/event1" },
+        { key: "event4", label: "Event 4", path: "/event1" },
+      ],
+    },
+  ];
+
   const openDrawer = () => {
     setDrawerVisible(!drawerVisible);
   };
@@ -162,7 +214,7 @@ const Index = () => {
           ))}
         </div>
       ) : (
-        <MenuDrawer items={menuItems} open={drawerVisible} openDrawer={openDrawer} />
+        <MenuDrawer items={menuDrawerItems} open={drawerVisible} openDrawer={openDrawer} />
       )}
     </Header>
   );

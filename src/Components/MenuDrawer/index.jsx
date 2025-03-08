@@ -49,10 +49,10 @@ const ImageCarousel = ({ open, openDrawer, items }) => {
         activeKey={activePanels}
         onChange={handlePanelChange}
       >
-        {items.map(({ header, submenu }) => (
+        {items.map(({ header, submenu = [] }) => (
           <Panel
-            header={
-              <Text className={style.MenuText}>
+          header={
+            <Text className={style.MenuText}>
                 {header.charAt(0).toUpperCase() + header.slice(1).toLowerCase()}
               </Text>
             }
@@ -64,20 +64,22 @@ const ImageCarousel = ({ open, openDrawer, items }) => {
               )
             }
             key={header}
-          >
-            <Menu>
-              {submenu.map(({ key, label, path }) => (
-                <Menu.Item
-                  key={key}
-                  onClick={() => {
-                    navigate(path);
-                    handleDrawerClose(); 
-                  }}
-                >
-                  <Text className={style.SubMenuText}>{label}</Text>
-                </Menu.Item>
-              ))}
-            </Menu>
+            >
+            {submenu.length > 0 && (
+              <Menu>
+                {submenu.map(({ key, label, path, disabled }) => (
+                  <Menu.Item
+                    key={key}
+                    onClick={() => {
+                      navigate(path);
+                      handleDrawerClose(); 
+                    }}
+                  >
+                    <Text style={disabled ? { color: "gray", cursor: "not-allowed" } : {}} className={style.SubMenuText}>{label}</Text>
+                  </Menu.Item>
+                ))}
+              </Menu>
+            )}
           </Panel>
         ))}
       </Collapse>
