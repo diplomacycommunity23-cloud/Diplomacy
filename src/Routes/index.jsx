@@ -10,7 +10,6 @@ const OurMission = lazy(() => import("../Pages/OurMission"));
 const SecretaryGeneral = lazy(() => import("../Pages/SecretaryGeneral"));
 const DcAward = lazy(() => import("../Pages/DcAward"));
 const DiplomatMeetings = lazy(() => import("../Pages/DiplomatMeetings"));
-const DebateSessions = lazy(() => import("../Pages/DebateSessions"));
 const Workshops = lazy(() => import("../Pages/Workshops"));
 const NetworkingEvents = lazy(() => import("../Pages/NetworkingEvents"));
 const CulturalExchange = lazy(() => import("../Pages/CulturalExchange"));
