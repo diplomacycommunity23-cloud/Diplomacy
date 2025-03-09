@@ -171,7 +171,7 @@ const Index = () => {
               </a>
             </Col>
             <Col style={{ padding: "0px" }} xs={4}>
-              <a href="https://www.linkedin.com/company/104675317/admin/dashboard/" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
+              <a href="https://www.linkedin.com/company/diplomacycommunity/" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
                 <LinkedinOutlined style={{ fontSize: "24px" }} />
               </a>
             </Col>
