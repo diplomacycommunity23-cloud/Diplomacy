@@ -32,20 +32,31 @@ const Index = () => {
     {
       header: "ACTIVITIES",
       submenu: [
-        { key: "secretariatMeetings", label: "Secretariat Meetings", path: "/secretariatmeetings"  },
+        { key: "secretariatMeetings", label: "Secretariat Meetings", path: "/secretariatmeetings" },
         { key: "officialVisits", label: "Official Visits", path: "/officialvisits" },
         { key: "workshops", label: "Workshops and Seminars", path: "/workshops" },
-        { key: "highLevelMeetings", label: "High Level Meetings", disabled: true},
+        { key: "highLevelMeetings", label: "High Level Meetings", disabled: true },
         { key: "networkingEvents", label: "Networking Events", disabled: true },
         { key: "diplomatMeetings", label: "Diplomat Meetings", disabled: true },
       ],
     },
     {
-      header: <Text style={{fontWeight: "700"}} className={style.NavBarText} onClick={(e) => e.preventDefault()}>
-      DIPLOMACY&nbsp;&nbsp;COMMUNITY
-    </Text>,
+      header: (
+        <Text
+          style={{ fontWeight: "700" }}
+          className={style.NavBarText}
+          onClick={(e) => e.preventDefault()}
+        >
+          DIPLOMACY&nbsp;&nbsp;COMMUNITY
+        </Text>
+      ),
       submenu: [
-        { key: "constitution", label: "Constitution", path: "https://s3.diplomacycommunity.org/constitution.pdf", external: true  },
+        {
+          key: "constitution",
+          label: "Constitution",
+          path: "https://s3.diplomacycommunity.org/constitution.pdf",
+          external: true,
+        },
         { key: "internalInterests", label: "Internal Interests", path: "/internalinterests" },
         {
           key: "internationalInterests",
@@ -60,16 +71,36 @@ const Index = () => {
     {
       header: "PUBLICATIONS",
       path: "/publications",
-      disabled: true
+      disabled: true,
     },
     {
       header: "PARTNERSHIP",
       submenu: [
-        { key: "member", label: "Become a member", path: "https://forms.gle/Qx2LAoXFopVB5UpGA", external: true },
-        { key: "partner", label: "Become a partner", path:"https://forms.gle/WneQMMzPb6BbcBZ28", external: true},
-        { key: "organizer", label: "Become a young leader", disabled: true},
-        { key: "mediapartner", label: "Become a media-partner", path:"https://forms.gle/ggBVSCmQDdtF8dbe6", external: true},
-        { key: "volunteer", label: "Become a volunteer", path:"https://docs.google.com/forms/d/e/1FAIpQLSdk92V_wSZM9hyA91SnYa-Z7OLhSFsdGrLuM_zw7E8b2qwR2g/viewform?usp=header", external: true},
+        {
+          key: "volunteer",
+          label: "Become a volunteer",
+          path: "https://docs.google.com/forms/d/e/1FAIpQLSdk92V_wSZM9hyA91SnYa-Z7OLhSFsdGrLuM_zw7E8b2qwR2g/viewform?usp=header",
+          external: true,
+        },
+        {
+          key: "member",
+          label: "Become a member",
+          path: "https://forms.gle/Qx2LAoXFopVB5UpGA",
+          external: true,
+        },
+        {
+          key: "mediapartner",
+          label: "Become a media-partner",
+          path: "https://forms.gle/ggBVSCmQDdtF8dbe6",
+          external: true,
+        },
+        {
+          key: "partner",
+          label: "Become a partner",
+          path: "https://forms.gle/WneQMMzPb6BbcBZ28",
+          external: true,
+        },
+        { key: "organizer", label: "Become a young leader", disabled: true },
       ],
     },
   ];
@@ -88,18 +119,23 @@ const Index = () => {
     {
       header: "ACTIVITIES",
       submenu: [
-        { key: "secretariatMeetings", label: "Secretariat Meetings", path: "/secretariatmeetings"  },
+        { key: "secretariatMeetings", label: "Secretariat Meetings", path: "/secretariatmeetings" },
         { key: "officialVisits", label: "Official Visits", path: "/officialvisits" },
         { key: "workshops", label: "Workshops and Seminars", path: "/workshops" },
-        { key: "highLevelMeetings", label: "High Level Meetings", disabled: true},
+        { key: "highLevelMeetings", label: "High Level Meetings", disabled: true },
         { key: "networkingEvents", label: "Networking Events", disabled: true },
         { key: "diplomatMeetings", label: "Diplomat Meetings", disabled: true },
       ],
     },
     {
-      header:"DIPLOMACY COMMUNITY",
+      header: "DIPLOMACY COMMUNITY",
       submenu: [
-        { key: "constitution", label: "Constitution", path: "https://s3.diplomacycommunity.org/constitution.pdf", external: true  },
+        {
+          key: "constitution",
+          label: "Constitution",
+          path: "https://s3.diplomacycommunity.org/constitution.pdf",
+          external: true,
+        },
         { key: "internalInterests", label: "Internal Interests", path: "/internalinterests" },
         {
           key: "internationalInterests",
@@ -114,16 +150,36 @@ const Index = () => {
     {
       header: "PUBLICATIONS",
       path: "/publications",
-      disabled:true
+      disabled: true,
     },
     {
       header: "PARTNERSHIP",
       submenu: [
-        { key: "member", label: "Become a member", path: "https://forms.gle/Qx2LAoXFopVB5UpGA", external: true },
-        { key: "partner", label: "Become a partner", path:"https://forms.gle/WneQMMzPb6BbcBZ28", external: true},
-        { key: "organizer", label: "Become a young leader", disabled: true},
-        { key: "mediapartner", label: "Become a media-partner", path:"https://forms.gle/ggBVSCmQDdtF8dbe6", external: true},
-        { key: "volunteer", label: "Become a volunteer", path:"https://docs.google.com/forms/d/e/1FAIpQLSdk92V_wSZM9hyA91SnYa-Z7OLhSFsdGrLuM_zw7E8b2qwR2g/viewform?usp=header", external: true},
+        {
+          key: "volunteer",
+          label: "Become a volunteer",
+          path: "https://docs.google.com/forms/d/e/1FAIpQLSdk92V_wSZM9hyA91SnYa-Z7OLhSFsdGrLuM_zw7E8b2qwR2g/viewform?usp=header",
+          external: true,
+        },
+        {
+          key: "member",
+          label: "Become a member",
+          path: "https://forms.gle/Qx2LAoXFopVB5UpGA",
+          external: true,
+        },
+        {
+          key: "mediapartner",
+          label: "Become a media-partner",
+          path: "https://forms.gle/ggBVSCmQDdtF8dbe6",
+          external: true,
+        },
+        {
+          key: "partner",
+          label: "Become a partner",
+          path: "https://forms.gle/WneQMMzPb6BbcBZ28",
+          external: true,
+        },
+        { key: "organizer", label: "Become a young leader", disabled: true },
       ],
     },
   ];
@@ -186,36 +242,38 @@ const Index = () => {
       </div>
       {screenSize?.width > 769 ? (
         <div className={style.NavBar}>
-          {menuItems.map(({ header, submenu, path, disabled }) => (
+          {menuItems.map(({ header, submenu, path, disabled }) =>
             submenu ? (
               <Dropdown
-              key={header}
-              overlay={
-                <Menu>
-                  {submenu.map(({ key, label, path, disabled, external }) => (
-                    <Menu.Item 
-                      key={key} 
-                      onClick={() => !disabled && (external ? window.open(path, '_blank') : navigate(path))} 
-                      disabled={disabled} 
-                      style={disabled ? { color: "gray", cursor: "not-allowed" } : {}}
-                    >
-                      {label}
-                    </Menu.Item>
-                  ))}
-                </Menu>
-              }
-              placement="bottomCenter"
-            >
-              <Text className={style.NavBarText} onClick={(e) => e.preventDefault()}>
-                {header}
-              </Text>
-            </Dropdown>
+                key={header}
+                overlay={
+                  <Menu>
+                    {submenu.map(({ key, label, path, disabled, external }) => (
+                      <Menu.Item
+                        key={key}
+                        onClick={() =>
+                          !disabled && (external ? window.open(path, "_blank") : navigate(path))
+                        }
+                        disabled={disabled}
+                        style={disabled ? { color: "gray", cursor: "not-allowed" } : {}}
+                      >
+                        {label}
+                      </Menu.Item>
+                    ))}
+                  </Menu>
+                }
+                placement="bottomCenter"
+              >
+                <Text className={style.NavBarText} onClick={(e) => e.preventDefault()}>
+                  {header}
+                </Text>
+              </Dropdown>
             ) : (
               <Text key={header} className={style.NavBarText}>
                 {header}
               </Text>
             )
-          ))}
+          )}
         </div>
       ) : (
         <MenuDrawer items={menuDrawerItems} open={drawerVisible} openDrawer={openDrawer} />
