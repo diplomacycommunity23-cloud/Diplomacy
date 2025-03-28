@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Menu, Drawer, Collapse, Typography, Image } from "antd";
 import DiplomacyLogo from "../../Assets/Logo/DiplomacyLogo.png";
+import LogoBlack from "../../Assets/Logo/LogoBlack.png";
 import { CloseOutlined, DownOutlined, RightOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 
@@ -34,14 +35,14 @@ const ImageCarousel = ({ open, openDrawer, items }) => {
       <div className={style.DrawerHeader}>
         <div className={style.DiplomacyLogo}>
           <Image
-            style={{ backgroundColor: "#0d1429", borderRadius: "3vmin" }}
+            style={{borderRadius: "3vmin" }}
             width={"20%"}
             preview={false}
-            src={DiplomacyLogo}
+            src={LogoBlack}
           />
         </div>
         <div onClick={handleDrawerClose} className={style.DrawerCloseIcon}>
-          <CloseOutlined style={{ color: "#ffffff" }} />
+          <CloseOutlined style={{ color: "#0d1429" }} />
         </div>
       </div>
       <Collapse
