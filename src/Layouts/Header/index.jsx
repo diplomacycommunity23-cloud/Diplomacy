@@ -65,11 +65,11 @@ const Index = () => {
     {
       header: "PARTNERSHIP",
       submenu: [
-        { key: "member", label: "Become a member", path: "https://docs.google.com/forms/d/e/1FAIpQLSdMorpxHB5QCoPT86rGHbYFgyz4bgYg7sxPM7GC7HRCDP63pA/viewform", external: true },
-        { key: "partner", label: "Become a partner", disabled: true},
+        { key: "member", label: "Become a member", path: "https://forms.gle/Qx2LAoXFopVB5UpGA", external: true },
+        { key: "partner", label: "Become a partner", path:"https://forms.gle/WneQMMzPb6BbcBZ28", external: true},
         { key: "organizer", label: "Become a young leader", disabled: true},
-        { key: "mediapartner", label: "Become a media-partner", disabled: true},
-        { key: "volunteer", label: "Become a volunteer", disabled: true},
+        { key: "mediapartner", label: "Become a media-partner", path:"https://forms.gle/ggBVSCmQDdtF8dbe6", external: true},
+        { key: "volunteer", label: "Become a volunteer", path:"https://docs.google.com/forms/d/e/1FAIpQLSdk92V_wSZM9hyA91SnYa-Z7OLhSFsdGrLuM_zw7E8b2qwR2g/viewform?usp=header", external: true},
       ],
     },
   ];
@@ -119,11 +119,11 @@ const Index = () => {
     {
       header: "PARTNERSHIP",
       submenu: [
-        { key: "member", label: "Become a member", path: "https://docs.google.com/forms/d/e/1FAIpQLSdMorpxHB5QCoPT86rGHbYFgyz4bgYg7sxPM7GC7HRCDP63pA/viewform", external: true },
-        { key: "partner", label: "Become a partner", disabled: true},
+        { key: "member", label: "Become a member", path: "https://forms.gle/Qx2LAoXFopVB5UpGA", external: true },
+        { key: "partner", label: "Become a partner", path:"https://forms.gle/WneQMMzPb6BbcBZ28", external: true},
         { key: "organizer", label: "Become a young leader", disabled: true},
-        { key: "mediapartner", label: "Become a media-partner", disabled: true},
-        { key: "volunteer", label: "Become a volunteer", disabled: true},
+        { key: "mediapartner", label: "Become a media-partner", path:"https://forms.gle/ggBVSCmQDdtF8dbe6", external: true},
+        { key: "volunteer", label: "Become a volunteer", path:"https://docs.google.com/forms/d/e/1FAIpQLSdk92V_wSZM9hyA91SnYa-Z7OLhSFsdGrLuM_zw7E8b2qwR2g/viewform?usp=header", external: true},
       ],
     },
   ];
