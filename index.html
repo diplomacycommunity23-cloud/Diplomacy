@@ -10,9 +10,23 @@
       body {
         margin: 0;
         font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
       }
       #root {
-        padding: 20px;
+        padding: 40px;
+        max-width: 800px;
+        margin: auto;
+        background: #fff;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        border-radius: 12px;
+        text-align: center;
+      }
+      h1 {
+        color: #0066cc;
+      }
+      p {
+        font-size: 18px;
       }
     </style>
   </head>
@@ -23,16 +37,22 @@
       <p>Your site is now running as a static page on GitHub Pages!</p>
     </div>
 
-    <!-- Replace the original module JS with plain JS -->
+    <!-- Inline script -->
     <script>
-      // Example JS to manipulate the page
       const root = document.getElementById("root");
 
       const newParagraph = document.createElement("p");
       newParagraph.textContent = "This script runs directly without a build tool!";
       root.appendChild(newParagraph);
 
+      // Example: dynamic content
+      const dateParagraph = document.createElement("p");
+      const now = new Date();
+      dateParagraph.textContent = "Current date and time: " + now.toLocaleString();
+      root.appendChild(dateParagraph);
+
       // You can add more JS logic here
     </script>
   </body>
 </html>
+
