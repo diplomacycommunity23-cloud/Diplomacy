@@ -37,22 +37,21 @@
       <p>Your site is now running as a static page on GitHub Pages!</p>
     </div>
 
-    <!-- Inline script -->
+    <!-- Inline JS -->
     <script>
       const root = document.getElementById("root");
 
+      // Example paragraph added dynamically
       const newParagraph = document.createElement("p");
       newParagraph.textContent = "This script runs directly without a build tool!";
       root.appendChild(newParagraph);
 
-      // Example: dynamic content
+      // Show current date and time
       const dateParagraph = document.createElement("p");
-      const now = new Date();
-      dateParagraph.textContent = "Current date and time: " + now.toLocaleString();
+      dateParagraph.textContent = "Current date and time: " + new Date().toLocaleString();
       root.appendChild(dateParagraph);
 
       // You can add more JS logic here
     </script>
   </body>
 </html>
-
