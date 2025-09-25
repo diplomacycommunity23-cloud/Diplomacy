@@ -9,12 +9,30 @@
     <style>
       body {
         margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      #root {
+        padding: 20px;
       }
     </style>
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="src/main.js"></script>
+    <div id="root">
+      <h1>Welcome to Diplomacy Community</h1>
+      <p>Your site is now running as a static page on GitHub Pages!</p>
+    </div>
+
+    <!-- Replace the original module JS with plain JS -->
+    <script>
+      // Example JS to manipulate the page
+      const root = document.getElementById("root");
+
+      const newParagraph = document.createElement("p");
+      newParagraph.textContent = "This script runs directly without a build tool!";
+      root.appendChild(newParagraph);
+
+      // You can add more JS logic here
+    </script>
   </body>
 </html>
