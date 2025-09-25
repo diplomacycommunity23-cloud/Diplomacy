@@ -16,8 +16,8 @@ function App() {
         <div style={{ height: "100vh", width: "100%", overflow: "hidden" }}>
           <video className={style.DiplomacyVideo} autoPlay loop muted playsInline>
             <source
-              src="/DiplomacyVideo.webm"
-              type="video/webm"
+              src="/DiplomacyVideo.mp4"
+              type="video/mp4"
             />
             Your browser does not support the video tag.
           </video>
