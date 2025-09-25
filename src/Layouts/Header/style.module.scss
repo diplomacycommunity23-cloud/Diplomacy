@@ -1,17 +1,14 @@
 .Header {
   z-index: 1000;
   width: 100%;
-  background: rgba(0, 0, 0, 0);
+  background: #0d1429; /* Footer ile aynı renk */
   display: flex;
   justify-content: space-between;
   padding: 1% 9% 10px 2%;
-  height: 15%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  justify-content: space-between;
+  height: auto;
+  position: relative;
   @media (max-width: 768px) {
-  background-color: rgba(0, 0, 0, 0) !important;
+    background-color: #0d1429 !important;
     flex-direction: column;
     align-items: left;
   }

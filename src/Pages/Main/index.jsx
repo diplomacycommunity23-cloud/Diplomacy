@@ -13,7 +13,8 @@ function App() {
   return (
     <Layout className="layout" style={{ backgroundColor: "#0d1429" }}>
       <Content>
-        <div style={{ height: "100vh", width: "100%", overflow: "hidden" }}>
+        {/* Video kısmı - Header'dan sonra gelecek */}
+        <div style={{ height: "70vh", width: "100%", overflow: "hidden", position: "relative" }}>
           <video className={style.DiplomacyVideo} autoPlay loop muted playsInline>
             <source
               src="/DiplomacyVideo.mp4"
@@ -35,6 +36,8 @@ function App() {
             </div>
           </div>
         </div>
+        
+        {/* Resimler kısmı - Video'dan sonra gelecek */}
         <div className={style.MainContainer}>
           <Row>
             <Col xs={24} sm={24} md={12} lg={8}>

@@ -7,15 +7,80 @@ import {
   YoutubeOutlined,
   CopyrightOutlined,
 } from "@ant-design/icons";
-import { Layout, Typography, Input, Button, Row, Col } from "antd";
+import { Layout, Typography, Input, Button, Row, Col, message } from "antd";
 import LinktreeOutlined from "../../Components/LinktreeIcon/index";
 import { useLocation } from "react-router-dom";
+import { useState } from "react";
+import emailjs from '@emailjs/browser';
+
 const { TextArea } = Input;
 const { Title, Text } = Typography;
 const { Footer } = Layout;
 
 const Index = () => {
   const location = useLocation();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [loading, setLoading] = useState(false);
+
+  const handleInputChange = (field, value) => {
+    setFormData(prev => ({
+      ...prev,
+      [field]: value
+    }));
+  };
+
+  const handleSendEmail = async () => {
+    // Form validation
+    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+      message.error('Lütfen tüm alanları doldurun');
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      message.error('Lütfen geçerli bir email adresi girin');
+      return;
+    }
+
+    setLoading(true);
+    
+    try {
+      // Ziyaretçinin mesajını size gönder
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+        to_email: 'dcc@ada.edu.az' // Size gelecek
+      };
+
+      await emailjs.send(
+        'service_o8rham6', // Gmail service ID'nizi
+        'template_0p6socp', // Template ID'nizi  
+        templateParams,
+        'WioPXB_QNWx3evKvt' // Public key'inizi
+      );
+      
+      // Clear form
+      setFormData({
+        name: '',
+        email: '',
+        message: ''
+      });
+      
+      message.success('Mesajınız başarıyla gönderildi!');
+    } catch (error) {
+      console.error('Email gönderme hatası:', error);
+      message.error('Mesaj gönderilemedi, lütfen tekrar deneyin');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <Footer
       className={style.Footer}
@@ -35,12 +100,24 @@ const Index = () => {
             <Text className={`${style.FooterTitle} ${style.centered}`}>
               Contact Secretary-General
             </Text>
-            <Input style={{ borderRadius: "0px", margin: "10px 0" }} placeholder="Name Surname" />
-            <Input placeholder="Email" style={{ borderRadius: "0px", margin: "10px 0" }} />
+            <Input 
+              style={{ borderRadius: "0px", margin: "10px 0" }} 
+              placeholder="Name Surname"
+              value={formData.name}
+              onChange={(e) => handleInputChange('name', e.target.value)}
+            />
+            <Input 
+              placeholder="Email" 
+              style={{ borderRadius: "0px", margin: "10px 0" }}
+              value={formData.email}
+              onChange={(e) => handleInputChange('email', e.target.value)}
+            />
             <TextArea
               style={{ borderRadius: "0px", margin: "10px 0" }}
               rows={3}
               placeholder="Your Message"
+              value={formData.message}
+              onChange={(e) => handleInputChange('message', e.target.value)}
             />
             <Button
               style={{
@@ -51,6 +128,8 @@ const Index = () => {
                 width: "100%",
                 marginTop: "10px",
               }}
+              loading={loading}
+              onClick={handleSendEmail}
             >
               Send
             </Button>

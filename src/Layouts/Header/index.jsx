@@ -53,9 +53,9 @@ const Index = () => {
       submenu: [
         {
           key: "constitution",
-          label: "Constitution",
-          path: "https://s3.diplomacycommunity.org/constitution.pdf",
-          external: true,
+          label: "Constitution", 
+          path: "/constitution.pdf",
+          target: "_blank",
         },
         { key: "internalInterests", label: "Internal Interests", path: "/internalinterests" },
         {
@@ -133,8 +133,8 @@ const Index = () => {
         {
           key: "constitution",
           label: "Constitution",
-          path: "https://s3.diplomacycommunity.org/constitution.pdf",
-          external: true,
+          path: "/constitution.pdf",
+          external: false, // Bu artık önemli değil çünkü key ile kontrol ediyoruz
         },
         { key: "internalInterests", label: "Internal Interests", path: "/internalinterests" },
         {
@@ -251,9 +251,18 @@ const Index = () => {
                     {submenu.map(({ key, label, path, disabled, external }) => (
                       <Menu.Item
                         key={key}
-                        onClick={() =>
-                          !disabled && (external ? window.open(path, "_blank") : navigate(path))
-                        }
+                        onClick={() => {
+                          if (!disabled) {
+                            if (key === "constitution") {
+                              // PDF için özel handling - yeni sekmede aç
+                              window.open("/constitution.pdf", "_blank");
+                            } else if (external) {
+                              window.open(path, "_blank");
+                            } else {
+                              navigate(path);
+                            }
+                          }
+                        }}
                         disabled={disabled}
                         style={disabled ? { color: "gray", cursor: "not-allowed" } : {}}
                       >

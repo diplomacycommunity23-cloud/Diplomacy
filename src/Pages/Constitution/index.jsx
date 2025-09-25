@@ -10,7 +10,7 @@ function App() {
         <div className={style.MainContainer}>
           <Row className={style.MainRow}>
 
-          <object data="src/Assets/constitution.pdf" type="application/pdf" width="100%" height="100%" />
+          <object data="/constitution.pdf" type="application/pdf" width="100%" height="100%" />
 
           </Row>
 

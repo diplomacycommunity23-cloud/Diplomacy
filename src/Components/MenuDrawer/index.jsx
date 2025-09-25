@@ -73,7 +73,10 @@ const ImageCarousel = ({ open, openDrawer, items }) => {
                   <Menu.Item
                     key={key}
                     onClick={() => {
-                      if (path.startsWith('http')) {
+                      if (key === "constitution") {
+                        // PDF için özel handling - yeni sekmede aç
+                        window.open("/constitution.pdf", "_blank");
+                      } else if (path.startsWith('http')) {
                         window.open(path, '_blank');
                       } else {
                         navigate(path);
