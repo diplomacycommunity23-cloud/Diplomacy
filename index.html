@@ -2,56 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="Assets/Logo/ColorfulLogo.png" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="diplomacycommunity">
     <title>Diplomacy Community</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #f8f8f8;
-        color: #333;
-      }
-      #root {
-        padding: 40px;
-        max-width: 800px;
-        margin: auto;
-        background: #fff;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        border-radius: 12px;
-        text-align: center;
-      }
-      h1 {
-        color: #0066cc;
-      }
-      p {
-        font-size: 18px;
-      }
-    </style>
   </head>
-
   <body>
-    <div id="root">
-      <h1>Welcome to Diplomacy Community</h1>
-      <p>Your site is now running as a static page on GitHub Pages!</p>
-    </div>
-
-    <!-- Inline JS -->
-    <script>
-      const root = document.getElementById("root");
-
-      // Example paragraph added dynamically
-      const newParagraph = document.createElement("p");
-      newParagraph.textContent = "This script runs directly without a build tool!";
-      root.appendChild(newParagraph);
-
-      // Show current date and time
-      const dateParagraph = document.createElement("p");
-      dateParagraph.textContent = "Current date and time: " + new Date().toLocaleString();
-      root.appendChild(dateParagraph);
-
-      // You can add more JS logic here
-    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
